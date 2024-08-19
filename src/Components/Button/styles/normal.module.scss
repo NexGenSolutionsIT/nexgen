@@ -1,0 +1,10 @@
+@import "./button.module.scss";
+
+.button {
+  background: $purple;
+
+  &:hover {
+    background: transparent;
+    color: $purple;
+  }
+}
