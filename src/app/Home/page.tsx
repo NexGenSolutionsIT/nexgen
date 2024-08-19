@@ -1,11 +1,12 @@
 "use client";
-import Button from "@/Components/Button/Button";
+
+import Header from "@/Components/Header/Header";
 import React from "react";
 
 function Home() {
   return (
     <div>
-      <Button label="Contato" />
+      <Header />
     </div>
   );
 }
