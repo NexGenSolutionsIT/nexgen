@@ -1,0 +1,55 @@
+@import "@/styles/variables.scss";
+
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+
+  &:hover .iconNormal {
+    opacity: 0;
+  }
+
+  &:hover .iconHover {
+    opacity: 1;
+  }
+}
+
+.icon {
+  position: relative;
+}
+
+.iconNormal,
+.iconHover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.iconHover {
+  opacity: 0;
+}
+
+.lightIcon {
+  color: $black;
+}
+
+.lightIconHover {
+  color: $purple;
+}
+
+.darkIcon {
+  color: $white;
+}
+
+.darkIconHover {
+  color: $purple;
+}
