@@ -1,3 +1,4 @@
+"use client";
 import Button from "@/Components/Button/Button";
 import React from "react";
 
