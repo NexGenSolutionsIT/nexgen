@@ -1,0 +1,13 @@
+@import "./header.module.scss";
+
+.header {
+  background: $white80;
+
+  .logo {
+    background: $black;
+  }
+
+  .title {
+    color: $black;
+  }
+}
