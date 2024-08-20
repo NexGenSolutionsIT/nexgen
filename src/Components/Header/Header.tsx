@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React, { useState } from "react";
 import Button from "@/Components/Button/Button";
@@ -53,7 +54,9 @@ function Header({}: HeaderProps) {
       </div>
       <div className={variantStyles.links}>
         {linksData.map((link, index) => (
-          <Links key={index} href={link.href} text={link.text} />
+          <Links key={index} href={link.href}>
+            {link.text}
+          </Links>
         ))}
       </div>
       <div className={variantStyles.button}>
@@ -81,7 +84,9 @@ function Header({}: HeaderProps) {
 
             <div className={variantStyles.links}>
               {linksData.map((link, index) => (
-                <Links key={index} href={link.href} text={link.text} />
+                <Links key={index} href={link.href}>
+                  {link.text}
+                </Links>
               ))}
             </div>
           </div>
