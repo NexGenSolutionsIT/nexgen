@@ -1,14 +1,16 @@
 "use client";
 
-import Footer from "@/Components/Footer/Footer";
-import Header from "@/Components/Header/Header";
 import React from "react";
+import Hero from "./Hero/Hero";
+import SectionOne from "./SectionOne/SectionOne";
+import SectionTwo from "./SectionTwo/SectionTwo";
 
 function Home() {
   return (
     <div>
-      <Header />
-      <Footer />
+      <Hero />
+      <SectionOne />
+      <SectionTwo />
     </div>
   );
 }
