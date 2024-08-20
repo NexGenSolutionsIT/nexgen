@@ -1,3 +1,6 @@
+import Footer from "@/Components/Footer/Footer";
+import Header from "@/Components/Header/Header";
+import { ThemeProvider } from "@/Context/ThemeContext";
 import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google";
 
@@ -14,7 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ubuntu.className}>{children}</body>
+      <body className={ubuntu.className}>
+        <ThemeProvider>
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
