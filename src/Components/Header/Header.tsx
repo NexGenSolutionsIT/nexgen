@@ -5,6 +5,7 @@ import Logo from "../../../public/logo.svg";
 import light from "./styles/light.module.scss";
 import dark from "./styles/dark.module.scss";
 import Links from "../Links/Links";
+import { useTheme } from "@/Context/ThemeContext";
 
 const linksData = [
   {
@@ -25,13 +26,12 @@ const linksData = [
   },
 ];
 
-interface HeaderProps {
-  variant?: "light" | "dark";
-}
+interface HeaderProps {}
 
-function Header({ variant = "dark" }: HeaderProps) {
+function Header({}: HeaderProps) {
+  const { theme } = useTheme();
   const getStyles = () => {
-    switch (variant) {
+    switch (theme) {
       case "light":
         return light;
       default:
@@ -47,7 +47,7 @@ function Header({ variant = "dark" }: HeaderProps) {
       </div>
       <div className={variantStyles.links}>
         {linksData.map((link, index) => (
-          <Links variant="dark" key={index} href={link.href} text={link.text} />
+          <Links key={index} href={link.href} text={link.text} />
         ))}
       </div>
       <div>
