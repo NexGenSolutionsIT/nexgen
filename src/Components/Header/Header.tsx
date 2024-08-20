@@ -1,11 +1,13 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Button from "@/Components/Button/Button";
 import Logo from "../../../public/logo.svg";
 import light from "./styles/light.module.scss";
 import dark from "./styles/dark.module.scss";
 import Links from "../Links/Links";
 import { useTheme } from "@/Context/ThemeContext";
+import ThemeToggleButton from "../ToggleTheme/ToggleTheme";
+import { FiMenu } from "react-icons/fi";
 
 const linksData = [
   {
@@ -30,6 +32,8 @@ interface HeaderProps {}
 
 function Header({}: HeaderProps) {
   const { theme } = useTheme();
+  const [isModalOpen, setModalOpen] = useState(false);
+
   const getStyles = () => {
     switch (theme) {
       case "light":
@@ -38,7 +42,9 @@ function Header({}: HeaderProps) {
         return dark;
     }
   };
+
   const variantStyles = getStyles();
+
   return (
     <header className={variantStyles.header}>
       <div className={variantStyles.logoContent}>
@@ -50,9 +56,37 @@ function Header({}: HeaderProps) {
           <Links key={index} href={link.href} text={link.text} />
         ))}
       </div>
-      <div>
+      <div className={variantStyles.button}>
+        <ThemeToggleButton />
         <Button label="Contato" />
       </div>
+      <div
+        className={variantStyles.menuIcon}
+        onClick={() => setModalOpen(true)}
+      >
+        <FiMenu />
+      </div>
+
+      {isModalOpen && (
+        <div className={variantStyles.modal}>
+          <div className={variantStyles.modalContent}>
+            <div className={variantStyles.button}>
+              <ThemeToggleButton />
+              <Button label="Contato" />
+              <button
+                className={variantStyles.closeButton}
+                onClick={() => setModalOpen(false)}
+              />
+            </div>
+
+            <div className={variantStyles.links}>
+              {linksData.map((link, index) => (
+                <Links key={index} href={link.href} text={link.text} />
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
