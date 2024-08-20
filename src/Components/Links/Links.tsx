@@ -1,15 +1,16 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import dark from "./styles/dark.module.scss";
 import light from "./styles/light.module.scss";
 import Link from "next/link";
 import { useTheme } from "@/Context/ThemeContext";
 
 interface LinksProps {
-  text: string;
+  children: ReactNode;
   href: string;
+  target?: string;
 }
 
-function Links({ text, href }: LinksProps) {
+function Links({ children, href, target }: LinksProps) {
   const { theme } = useTheme();
 
   const getStyles = () => {
@@ -25,8 +26,8 @@ function Links({ text, href }: LinksProps) {
 
   return (
     <div>
-      <Link href={href} className={variantStyles.link}>
-        {text}
+      <Link href={href} className={variantStyles.link} target={target}>
+        {children}
       </Link>
     </div>
   );

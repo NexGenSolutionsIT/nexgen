@@ -1,0 +1,75 @@
+@import "../../../styles/variables.scss";
+
+.footer {
+  width: 100%;
+  justify-content: space-between;
+
+  .container_footer {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 208px;
+      margin-bottom: 48px;
+
+      .column {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+
+        .subtitle {
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .line {
+      width: 80%;
+      height: 2px;
+      border-radius: 50px;
+    }
+
+    .social {
+      margin-top: 16px;
+      width: 78%;
+      display: flex;
+      justify-content: end;
+      gap: 16px;
+      .icon {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .container_bottom {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .copyright {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .terms_container {
+      display: flex;
+      gap: 16px;
+
+      .terms {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}

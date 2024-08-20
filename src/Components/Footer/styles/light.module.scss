@@ -1,0 +1,24 @@
+@import "./commun.module.scss";
+
+.footer {
+  color: $dark60;
+
+  .container_footer {
+    background: $light;
+
+    .line {
+      background: $dark20;
+    }
+  }
+
+  .container_bottom {
+    background-color: $beige;
+
+    .copyright {
+      color: $dark40;
+    }
+    .terms {
+      color: $dark40;
+    }
+  }
+}

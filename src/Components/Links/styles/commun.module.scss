@@ -6,12 +6,12 @@
   font-size: 14px;
   font-weight: 400;
   &:hover {
-    color: $purple;
+    color: $primary;
     transition: 0.3s;
   }
   &:focus {
     transition: 0.3s;
-    color: $purple;
+    color: $primary;
     -webkit-text-shadow: 0px 0px 16px -4px #8c3cad;
     -moz-text-shadow: 0px 0px 16px -4px #8c3cad;
     text-shadow: 0px 0px 16px #8c3cad;
