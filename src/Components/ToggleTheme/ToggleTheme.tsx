@@ -15,7 +15,7 @@ function ThemeToggleButton() {
   return (
     <button onClick={toggleTheme} className={styles.button}>
       {theme === "light" ? (
-        <span>
+        <span className={styles.container}>
           <span className={`${styles.iconNormal} ${styles.lightIcon}`}>
             <IoMoonOutline />
           </span>
@@ -24,7 +24,7 @@ function ThemeToggleButton() {
           </span>
         </span>
       ) : (
-        <span>
+        <span className={styles.container}>
           <span className={`${styles.iconNormal} ${styles.darkIcon}`}>
             <IoSunnyOutline />
           </span>

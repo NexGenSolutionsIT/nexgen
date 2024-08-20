@@ -9,6 +9,7 @@
   max-width: 100%;
   height: 80px;
   box-sizing: border-box;
+  padding: 0 70px;
 
   .logoContent {
     display: flex;
@@ -16,6 +17,7 @@
     justify-content: space-between !important;
     align-items: center;
     width: 142px;
+    max-width: 100%;
 
     .logo {
       width: 53.8px;
@@ -35,5 +37,92 @@
     flex-direction: row;
     justify-content: space-between;
     width: 369px;
+    max-width: 100%;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 151px;
+    max-width: 100%;
+  }
+
+  .menuIcon {
+    display: none; /* Esconde o ícone de menu por padrão */
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 990px) {
+    padding: 0 30px;
+  }
+
+  @media screen and (max-width: 375px) {
+    padding: 0 20px;
+
+    .links,
+    .button {
+      display: none; /* Esconde os links e o botão em telas pequenas */
+    }
+
+    .menuIcon {
+      display: block; /* Mostra o ícone de menu em telas pequenas */
+    }
+  }
+}
+
+/* Estilos para o modal que aparece em telas pequenas */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  .modalContent {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+
+    .closeButton {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #333;
+
+      &:hover {
+        color: #ff0000; /* Muda a cor do "X" ao passar o mouse */
+      }
+
+      &::before {
+        content: "✕"; /* Ícone de "X" */
+      }
+    }
+
+    .links,
+    .button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+
+      a {
+        margin: 10px 0;
+      }
+    }
   }
 }
