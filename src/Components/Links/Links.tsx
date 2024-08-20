@@ -2,16 +2,18 @@ import React from "react";
 import dark from "./styles/dark.module.scss";
 import light from "./styles/light.module.scss";
 import Link from "next/link";
+import { useTheme } from "@/Context/ThemeContext";
 
 interface LinksProps {
   text: string;
-  variant?: "dark" | "light";
   href: string;
 }
 
-function Links({ variant = "light", text, href }: LinksProps) {
+function Links({ text, href }: LinksProps) {
+  const { theme } = useTheme();
+
   const getStyles = () => {
-    switch (variant) {
+    switch (theme) {
       case "dark":
         return dark;
       default:
