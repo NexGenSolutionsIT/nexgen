@@ -7,3 +7,19 @@
 .title {
   color: $light;
 }
+
+.modal {
+  background-color: $black;
+
+  .modalContent {
+    background: $black;
+  }
+
+  .closeButton {
+    color: $light;
+  }
+}
+
+.menu {
+  color: $light;
+}
