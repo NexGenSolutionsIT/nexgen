@@ -2,4 +2,16 @@
 
 .container {
   background: $black;
+
+  .circle {
+    background: $dark;
+  }
+
+  .subtitle {
+    color: $light;
+  }
+
+  .subtext {
+    color: $light60;
+  }
 }
