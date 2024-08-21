@@ -67,7 +67,7 @@ function Header({}: HeaderProps) {
         className={variantStyles.menuIcon}
         onClick={() => setModalOpen(true)}
       >
-        <FiMenu />
+        <FiMenu className={variantStyles.menu} />
       </div>
 
       {isModalOpen && (
@@ -75,7 +75,6 @@ function Header({}: HeaderProps) {
           <div className={variantStyles.modalContent}>
             <div className={variantStyles.button}>
               <ThemeToggleButton />
-              <Button label="Contato" />
               <button
                 className={variantStyles.closeButton}
                 onClick={() => setModalOpen(false)}
@@ -89,6 +88,7 @@ function Header({}: HeaderProps) {
                 </Links>
               ))}
             </div>
+            <Button label="Contato" type="button" variant="mobile" />
           </div>
         </div>
       )}
