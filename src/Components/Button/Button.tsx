@@ -1,12 +1,13 @@
 import React from "react";
 import normal from "./styles/normal.module.scss";
 import reverse from "./styles/reverse.module.scss";
+import mobile from "./styles/mobile.module.scss";
 interface ButtonProps {
   label: string;
   onClick?: () => void;
   disabled?: boolean;
   type?: "button" | "submit";
-  variant?: "reverse" | "normal";
+  variant?: "reverse" | "normal" | "mobile";
 }
 
 function Button({
@@ -20,6 +21,8 @@ function Button({
     switch (variant) {
       case "reverse":
         return reverse;
+      case "mobile":
+        return mobile;
       default:
         return normal;
     }
