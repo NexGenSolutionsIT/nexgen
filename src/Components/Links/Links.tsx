@@ -8,6 +8,7 @@ interface LinksProps {
   children: ReactNode;
   href: string;
   target?: string;
+  className?: string;
 }
 
 function Links({ children, href, target }: LinksProps) {
