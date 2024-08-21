@@ -1,0 +1,11 @@
+@import "./button.module.scss";
+
+.button {
+  width: 100%;
+  background: $primary;
+
+  &:hover {
+    background: transparent;
+    color: $primary;
+  }
+}
