@@ -33,10 +33,67 @@
     .link {
       display: flex;
       align-items: center;
+      flex-direction: row;
+
+      .icon {
+        padding-left: 8px;
+      }
     }
   }
 
   .acordion_group {
     width: 528px;
+  }
+
+  .toggleAccordion {
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 16px 0;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease; /* Adiciona transição suave */
+
+    &:hover {
+      background-color: rgba(
+        0,
+        0,
+        0,
+        0.04
+      ); /* Cor de fundo ao passar o mouse */
+      color: $primary; /* Altere a cor conforme necessário */
+    }
+
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.04); /* Cor de fundo ao focar */
+      color: $primary; /* Altere a cor conforme necessário */
+    }
+  }
+
+  .accordionIcon {
+    transition: transform 0.4s ease;
+  }
+
+  .accordionContent {
+    overflow: hidden; /* Garante que o conteúdo não vaze */
+    color: inherit;
+    padding: 0;
+    max-height: 0; /* Define a altura inicial como 0 */
+    transition:
+      max-height 0.3s ease,
+      opacity 0.3s ease; /* Transições para max-height e opacidade */
+  }
+
+  .accordionContentOpen {
+    max-height: 500px; /* Define um valor suficientemente alto para o conteúdo */
+    padding: 18px 0; /* Adiciona padding quando aberto */
   }
 }
