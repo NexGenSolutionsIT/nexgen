@@ -2,4 +2,9 @@
 
 .container {
   background: $dark;
+  color: $light;
+
+  .markTitle {
+    color: $gradientDown;
+  }
 }
