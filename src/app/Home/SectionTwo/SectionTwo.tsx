@@ -9,7 +9,36 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { createTheme } from "@mui/material";
+import symbol from "../../../../public/images/symbol.svg";
+import Image from "next/image";
+
+const accordionData = [
+  {
+    summary: "Websites Institucionais",
+    details:
+      "Fortalecemos a presença digital do seu negócio, através de sites de alta qualidade profissional e de estratégias personalizadas.",
+  },
+  {
+    summary: "Landing Pages",
+    details:
+      "Landing pages de alta conversão é uma das nossas especialidades, com design guiado e performance incomparável.",
+  },
+  {
+    summary: "E-commerces",
+    details:
+      "Fornecemos soluções personalizadas e escaláveis, para que você alcance os seus objetivos, agora e no futuro, de forma consistente e prática.",
+  },
+  {
+    summary: "Sistemas Web personalizados",
+    details:
+      " Oferecemos uma equipe de desenvolvedores de elite sob demanda para entregar a solução ideal para o seu negócio, e claro, para a sua audiência.",
+  },
+  {
+    summary: "Aplicativos Mobile",
+    details:
+      "Fortalecemos a presença digital do seu negócio, através de sites de alta qualidade profissional e de estratégias personalizadas.",
+  },
+];
 
 function SectionTwo() {
   const { theme } = useTheme();
@@ -25,6 +54,9 @@ function SectionTwo() {
 
   return (
     <div className={variantStyles.container}>
+      <div className={variantStyles.symbol}>
+        <Image src={symbol} alt="" />
+      </div>
       <div className={variantStyles.content}>
         <p className={variantStyles.subtitle}>
           Do micro ao grande empresário, todos precisam de tecnologia para seus
@@ -40,11 +72,9 @@ function SectionTwo() {
           <Links href="">
             {
               <div className={variantStyles.link}>
+                <p>Conheça nossos serviços</p>
                 <p>
-                  Conheça nossos serviços
-                  <span>
-                    <BsArrowRight />
-                  </span>
+                  <BsArrowRight className={variantStyles.icon} />
                 </p>
               </div>
             }
@@ -52,20 +82,21 @@ function SectionTwo() {
         </div>
       </div>
       <div className={variantStyles.acordion_group}>
-        <Accordion className={variantStyles.acordion}>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1-content"
-            id="panel1-header"
-            className={variantStyles.summary}
-          >
-            Accordion 1
-          </AccordionSummary>
-          <AccordionDetails className={variantStyles.details}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </AccordionDetails>
-        </Accordion>
+        {accordionData.map((accordion, index) => (
+          <Accordion key={index} className={variantStyles.acordion}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon className={variantStyles.icon} />}
+              aria-controls="panel1-content"
+              id="panel1-header"
+              className={variantStyles.summary}
+            >
+              {accordion.summary}
+            </AccordionSummary>
+            <AccordionDetails className={variantStyles.details}>
+              {accordion.details}
+            </AccordionDetails>
+          </Accordion>
+        ))}
       </div>
     </div>
   );
