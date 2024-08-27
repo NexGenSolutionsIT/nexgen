@@ -2,4 +2,36 @@
 
 .container {
   background: $black;
+
+  .content {
+    width: 641px;
+    .subtitle {
+      color: $light;
+    }
+    .text {
+      color: $light80;
+    }
+  }
+
+  .acordion_group {
+    margin-top: 20px;
+  }
+
+  .acordion {
+    border-bottom: 1px solid $light20;
+    & .summary {
+      font-size: 18px;
+      color: $light;
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    & .details {
+      color: $light;
+    }
+    & .icon {
+      color: #fff;
+    }
+  }
 }
