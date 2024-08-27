@@ -13,19 +13,19 @@ import { FiMenu } from "react-icons/fi";
 const linksData = [
   {
     text: "Inicio",
-    href: "/inicio",
+    href: "/",
   },
   {
     text: "Projetos",
-    href: "/project",
+    href: "/Projects",
   },
   {
     text: "Quem Somos",
-    href: "/weAre",
+    href: "/About",
   },
   {
     text: "Serviços",
-    href: "/jobs",
+    href: "/Services",
   },
 ];
 
