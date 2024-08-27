@@ -1,0 +1,18 @@
+@import "./commun.module.scss";
+
+.card {
+  background-color: $dark60;
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    box-shadow: 2px 2px 8px 0px rgba(255, 255, 255, 0.1);
+  }
+
+  .caption_container {
+    background-color: $dark;
+  }
+
+  .name {
+    color: $light80;
+  }
+}
