@@ -1,0 +1,16 @@
+@import "./commun.module.scss";
+
+.container {
+  background: $black;
+
+  .title {
+    color: $light40;
+    .title_span {
+      color: $light20;
+    }
+  }
+
+  .subtitle {
+    color: $light60;
+  }
+}
