@@ -3,3 +3,7 @@
 body {
   font-family: "Ubuntu", sans-serif;
 }
+
+body::-webkit-scrollbar {
+  width: 0px;
+}

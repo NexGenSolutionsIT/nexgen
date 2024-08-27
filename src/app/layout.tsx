@@ -2,6 +2,8 @@ import Footer from "@/Components/Footer/Footer";
 import Header from "@/Components/Header/Header";
 import { ThemeProvider } from "@/Context/ThemeContext";
 import type { Metadata } from "next";
+import "@/styles/global.scss";
+import "@/styles/reset.scss";
 import { Ubuntu } from "next/font/google";
 
 const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["400", "500", "700"] });

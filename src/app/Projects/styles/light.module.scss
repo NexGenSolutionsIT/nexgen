@@ -1,0 +1,16 @@
+@import "./commun.module.scss";
+
+.container {
+  background: $beige;
+
+  .title {
+    color: $dark40;
+    .title_span {
+      color: $dark80;
+    }
+  }
+
+  .subtitle {
+    color: $black80;
+  }
+}
