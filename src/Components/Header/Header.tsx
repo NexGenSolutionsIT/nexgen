@@ -17,15 +17,15 @@ const linksData = [
   },
   {
     text: "Projetos",
-    href: "/Projects",
+    href: "/projects",
   },
   {
     text: "Quem Somos",
-    href: "/About",
+    href: "/about",
   },
   {
     text: "Serviços",
-    href: "/Services",
+    href: "/services",
   },
 ];
 

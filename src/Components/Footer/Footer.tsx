@@ -2,12 +2,12 @@
 import React from "react";
 import dark from "./styles/dark.module.scss";
 import light from "./styles/light.module.scss";
-import { useTheme } from "@/Context/ThemeContext";
 import Links from "../Links/Links";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
+import { useTheme } from "@/Context/ThemeContext";
 
 const nexgenData = [
   {
