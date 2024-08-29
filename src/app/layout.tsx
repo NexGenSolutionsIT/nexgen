@@ -1,6 +1,6 @@
 import Footer from "@/Components/Footer/Footer";
 import Header from "@/Components/Header/Header";
-import { ThemeProvider } from "@/Context/ThemeContext";
+import { ThemeProvider } from "@/context/ThemeContext";
 import type { Metadata } from "next";
 import "@/styles/global.scss";
 import "@/styles/reset.scss";
