@@ -2,12 +2,12 @@
 import React from "react";
 import dark from "./styles/dark.module.scss";
 import light from "./styles/light.module.scss";
-import { useTheme } from "@/Context/ThemeContext";
-import Image from "next/image";
+import { useTheme } from "@/context/ThemeContext";
+import Image, { StaticImageData } from "next/image";
 import Links from "@/Components/Links/Links";
 
 interface CardProps {
-  image: string;
+  image: StaticImageData;
   link: string;
   project: string;
   href: string;
