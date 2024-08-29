@@ -9,7 +9,7 @@ export default function Project({ params, searchParams }: Props) {
   return (
     <>
       <h1 className="text-xl font-bold">
-        Perfil: {params.nickname} (Idioma: {searchParams.lang})
+        Perfila: {params.nickname} (Idioma: {searchParams.lang})
       </h1>
     </>
   );
