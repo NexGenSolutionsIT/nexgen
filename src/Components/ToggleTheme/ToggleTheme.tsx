@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { useTheme } from "../../context/ThemeContext";
 import styles from "./toggleTheme.module.scss";
+import { useTheme } from "@/context/ThemeContext";
 import {
   IoSunnyOutline,
   IoSunny,
