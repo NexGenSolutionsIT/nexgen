@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useTheme } from "@/Context/ThemeContext";
+import { useTheme } from "@/context/ThemeContext";
 import dark from "./styles/dark.module.scss";
 import light from "./styles/light.module.scss";
 import Card from "./Card/Card";

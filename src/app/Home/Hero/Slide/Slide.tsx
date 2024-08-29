@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import dark from "./styles/dark.module.scss";
 import light from "./styles/light.module.scss";
-import { useTheme } from "@/Context/ThemeContext";
+import { useTheme } from "@/context/ThemeContext";
 import Image from "next/image";
 import Hero from "../../../../../public/images/Hero.png";
 import { motion, AnimatePresence } from "framer-motion";

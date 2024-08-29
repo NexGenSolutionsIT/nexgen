@@ -1,14 +1,14 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import Button from "@/Components/Button/Button";
+import Button from "@/components/Button/Button";
 import Logo from "../../../public/logo.svg";
 import light from "./styles/light.module.scss";
 import dark from "./styles/dark.module.scss";
 import Links from "../Links/Links";
-import { useTheme } from "@/Context/ThemeContext";
-import ThemeToggleButton from "../ToggleTheme/ToggleTheme";
+import { useTheme } from "@/context/ThemeContext";
 import { FiMenu } from "react-icons/fi";
+import ThemeToggleButton from "../ToggleTheme/ToggleTheme";
 
 const linksData = [
   {

@@ -1,10 +1,10 @@
-import { useTheme } from "@/Context/ThemeContext";
+import { useTheme } from "@/context/ThemeContext";
 import dark from "./styles/dark.module.scss";
 import light from "./styles/light.module.scss";
 import React from "react";
-import Button from "@/Components/Button/Button";
+import Button from "@/components/Button/Button";
 import { BsArrowRight } from "react-icons/bs";
-import Links from "@/Components/Links/Links";
+import Links from "@/components/Links/Links";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
