@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  pageExtensions: ["page.tsx", "tsx", "js", "jsx"],
+  reactStrictMode: true,
+};
 
 export default nextConfig;
