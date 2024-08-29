@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
-import { useTheme } from "@/context/ThemeContext";
+import { useTheme } from "@/Context/ThemeContext";
 
 const nexgenData = [
   {

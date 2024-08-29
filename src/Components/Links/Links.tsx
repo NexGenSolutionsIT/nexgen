@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import dark from "./styles/dark.module.scss";
 import light from "./styles/light.module.scss";
 import Link from "next/link";
-import { useTheme } from "@/context/ThemeContext";
+import { useTheme } from "@/Context/ThemeContext";
 
 interface LinksProps {
   children: ReactNode;

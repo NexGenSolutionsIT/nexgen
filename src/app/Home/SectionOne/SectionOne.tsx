@@ -1,7 +1,7 @@
 import React from "react";
 import dark from "./styles/dark.module.scss";
 import light from "./styles/light.module.scss";
-import { useTheme } from "@/context/ThemeContext";
+import { useTheme } from "@/Context/ThemeContext";
 import Image from "next/image";
 import Group from "../../../../public/images/Group.svg";
 
