@@ -6,7 +6,7 @@ import Logo from "../../../public/logo.svg";
 import light from "./styles/light.module.scss";
 import dark from "./styles/dark.module.scss";
 import Links from "../Links/Links";
-import { useTheme } from "@/Context/ThemeContext";
+import { useTheme } from "@/context/ThemeContext";
 import ThemeToggleButton from "../ToggleTheme/ToggleTheme";
 import { FiMenu } from "react-icons/fi";
 
@@ -17,15 +17,15 @@ const linksData = [
   },
   {
     text: "Projetos",
-    href: "/Projects",
+    href: "/projects",
   },
   {
     text: "Quem Somos",
-    href: "/About",
+    href: "/about",
   },
   {
     text: "Serviços",
-    href: "/Services",
+    href: "/services",
   },
 ];
 
