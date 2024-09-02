@@ -4,13 +4,14 @@ import light from "./styles/light.module.scss";
 import React from "react";
 import Button from "@/components/Button/Button";
 import { BsArrowRight } from "react-icons/bs";
-import Links from "@/components/Links/Links";
+
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import symbol from "../../../../public/images/symbol.svg";
 import Image from "next/image";
+import Links from "@/Components/Links/Links";
 
 const accordionData = [
   {
