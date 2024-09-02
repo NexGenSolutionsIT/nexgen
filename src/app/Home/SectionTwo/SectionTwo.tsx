@@ -2,7 +2,7 @@ import { useTheme } from "@/Context/ThemeContext";
 import dark from "./styles/dark.module.scss";
 import light from "./styles/light.module.scss";
 import React from "react";
-import Button from "@/components/Button/Button";
+import Button from "@/tempComponents/Button/Button";
 import { BsArrowRight } from "react-icons/bs";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -10,7 +10,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import symbol from "../../../../public/images/symbol.svg";
 import Image from "next/image";
-import Links from "@/components/Links/Links";
+import Links from "@/tempComponents/Links/Links";
 
 const accordionData = [
   {
