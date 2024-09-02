@@ -6,7 +6,7 @@ import Logo from "../../../public/logo.svg";
 import light from "./styles/light.module.scss";
 import dark from "./styles/dark.module.scss";
 import Links from "../Links/Links";
-import { useTheme } from "@/context/ThemeContext";
+import { useTheme } from "@/Context/ThemeContext";
 import { FiMenu } from "react-icons/fi";
 import ThemeToggleButton from "../ToggleTheme/ToggleTheme";
 

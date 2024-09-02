@@ -1,4 +1,4 @@
-import { useTheme } from "@/context/ThemeContext";
+import { useTheme } from "@/Context/ThemeContext";
 import dark from "./styles/dark.module.scss";
 import light from "./styles/light.module.scss";
 import React from "react";
