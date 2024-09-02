@@ -4,7 +4,7 @@ import dark from "./styles/dark.module.scss";
 import light from "./styles/light.module.scss";
 import { useTheme } from "@/Context/ThemeContext";
 import Image, { StaticImageData } from "next/image";
-import Links from "@/Components/Links/Links";
+import Links from "@/components/Links/Links";
 
 interface CardProps {
   image: StaticImageData;

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import Button from "@/Components/Button/Button";
+import Button from "@/components/Button/Button";
 import Logo from "../../../public/logo.svg";
 import light from "./styles/light.module.scss";
 import dark from "./styles/dark.module.scss";
