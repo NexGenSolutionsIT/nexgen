@@ -9,6 +9,7 @@ import Links from "../Links/Links";
 import { useTheme } from "@/Context/ThemeContext";
 import { FiMenu } from "react-icons/fi";
 import ThemeToggleButton from "../ToggleTheme/ToggleTheme";
+import Link from "next/link";
 
 const linksData = [
   {
@@ -29,9 +30,7 @@ const linksData = [
   },
 ];
 
-interface HeaderProps {}
-
-function Header({}: HeaderProps) {
+function Header() {
   const { theme } = useTheme();
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -61,7 +60,9 @@ function Header({}: HeaderProps) {
       </div>
       <div className={variantStyles.button}>
         <ThemeToggleButton />
-        <Button label="Contato" />
+        <Link href="/contact">
+          <Button label="Contato" />
+        </Link>
       </div>
       <div
         className={variantStyles.menuIcon}
@@ -88,7 +89,9 @@ function Header({}: HeaderProps) {
                 </Links>
               ))}
             </div>
-            <Button label="Contato" type="button" variant="mobile" />
+            <Link href="/contact">
+              <Button label="Contato" type="button" />
+            </Link>
           </div>
         </div>
       )}

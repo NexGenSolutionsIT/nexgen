@@ -56,7 +56,7 @@ function Projects() {
 
             return (
               <Link
-                href={`/projects/project/${card.id}`}
+                href={`/projects/${card.id}`}
                 key={index}
                 className={variantStyles.link}
               >
