@@ -1,5 +1,5 @@
-import Footer from "@/tempComponents/Footer/Footer";
-import Header from "@/tempComponents/Header/Header";
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
 import { ThemeProvider } from "@/Context/ThemeContext";
 import type { Metadata } from "next";
 import "@/styles/global.scss";
