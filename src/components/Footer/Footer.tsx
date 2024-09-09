@@ -8,6 +8,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import { useTheme } from "@/Context/ThemeContext";
+import Logo from "../../../public/logo.svg";
+import Image from "next/image";
 
 const nexgenData = [
   {
@@ -89,7 +91,23 @@ function Footer() {
       <div className={variantStyles.container_footer}>
         <div className={variantStyles.content}>
           <div className={variantStyles.column}>
-            <p className={variantStyles.subtitle}>Nexgen</p>
+            <p
+              className={variantStyles.subtitle}
+              style={{
+                textAlign: "center",
+                justifyContent: "center",
+                alignItems: "center",
+                display: "flex",
+              }}
+            >
+              <Image
+                src={Logo}
+                alt="Nexgen IT Solutions Logo"
+                className={variantStyles.logo}
+                style={{ width: "30px", marginRight: "10px" }}
+              />
+              NexGen{" "}
+            </p>
             {nexgenData.map((link, index) => (
               <Links key={index} href={link.href}>
                 {link.text}
@@ -112,22 +130,28 @@ function Footer() {
               </Links>
             ))}
           </div>
+          <div className={variantStyles.column}>
+            <p className={variantStyles.subtitle}>Redes Sociais</p>
+            <Links href="https://github.com/NexGenSolutionsIT" target="_blank">
+              <FaGithub className={variantStyles.icon} />
+              <span className={variantStyles.socialText}>&nbsp;GitHub</span>
+            </Links>
+
+            <Links href="https://twitter.com/NexGenSolutionsIT" target="_blank">
+              <FaXTwitter className={variantStyles.icon} />
+              <span className={variantStyles.socialText}>&nbsp;Twitter</span>
+            </Links>
+            <Links
+              href="https://www.linkedin.com/company/nexgen-systems-solutions/"
+              target="_blank"
+            >
+              <FaLinkedin className={variantStyles.icon} />
+              <span className={variantStyles.socialText}>&nbsp;Linkedin</span>
+            </Links>
+            {/* </div> */}
+          </div>
         </div>
         <div className={variantStyles.line}></div>
-        <div className={variantStyles.social}>
-          <Links href="https://github.com/NexGenSolutionsIT" target="_blank">
-            <FaGithub className={variantStyles.icon} />
-          </Links>
-          <Links href="https://github.com/NexGenSolutionsIT" target="_blank">
-            <FaXTwitter className={variantStyles.icon} />
-          </Links>
-          <Links
-            href="https://www.linkedin.com/company/nexgen-systems-solutions/"
-            target="_blank"
-          >
-            <FaLinkedin className={variantStyles.icon} />
-          </Links>
-        </div>
       </div>
       <div className={variantStyles.container_bottom}>
         <div>
