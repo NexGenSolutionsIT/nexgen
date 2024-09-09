@@ -10,23 +10,23 @@ function SubHero() {
   const { theme } = useTheme();
   const getStyles = () => {
     switch (theme) {
-      case "light":
-        return light;
+      // case "light":
+      //   return light;
       default:
         return dark;
     }
   };
   const variantStyles = getStyles();
   return (
-    <div className={variantStyles.container}>
+    <div style={{ height: "50%" }} className={variantStyles.container}>
       <div className={variantStyles.content}>
         <div className={variantStyles.circle}>
           <HiOutlineCursorClick />
         </div>
         <div className={variantStyles.text}>
-          <p className={variantStyles.subtitle}>Qualidade excepcional</p>
+          <p className={variantStyles.subtitle}>Qualidade Excepcional</p>
           <p className={variantStyles.subtext}>
-            A Nexgen foi criada para tornar sua vida mais fácil. Sistemas e
+            A NexGen foi criada para tornar sua vida mais fácil. Sistemas e
             ferramentas com a mais alta qualidade do mercado.
           </p>
         </div>
@@ -36,7 +36,7 @@ function SubHero() {
           <BsPalette2 />
         </div>
         <div className={variantStyles.text}>
-          <p className={variantStyles.subtitle}>Projetado para ser moderno</p>
+          <p className={variantStyles.subtitle}>Projetado Para Ser Moderno</p>
           <p className={variantStyles.subtext}>
             Projetado com as últimas tendências de design. Modernidade em cada
             detalhe, combinando elegância e simplicidade.

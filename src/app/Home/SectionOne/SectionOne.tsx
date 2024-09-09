@@ -9,15 +9,15 @@ function SectionOne() {
   const { theme } = useTheme();
   const getStyles = () => {
     switch (theme) {
-      case "light":
-        return light;
+      // case "light":
+      // return light;
       default:
         return dark;
     }
   };
   const variantStyles = getStyles();
   return (
-    <div className={variantStyles.container}>
+    <div style={{ marginTop: "10%" }} className={variantStyles.container}>
       <div className={variantStyles.textContainer}>
         <h2 className={variantStyles.title}>
           Transforme suas ideias em {""}

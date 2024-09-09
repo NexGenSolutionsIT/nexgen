@@ -46,12 +46,12 @@ const contactData = [
   },
   {
     text: "contato@nexgen.com.br",
-    href: "alexandreosovski.contato@gmail.com",
+    href: "comercial@nexgensolutions.com.br",
   },
-  {
-    text: "Pedro Ivo 379, 864-970 - Centro - Curtiba /PR",
-    href: "https://www.google.com.br/maps/place/R.+Pedro+Ivo,+864-970+-+Centro,+Curitiba+-+PR,+82590-300/@-25.4320374,-49.2659588,19z/data=!3m1!4b1!4m15!1m8!3m7!1s0x94dce35351cdb3dd:0x6d2f6ba5bacbe809!2sCuritiba,+PR!3b1!8m2!3d-25.4268985!4d-49.2651984!16zL20vMDI4bXBy!3m5!1s0x94dce46a6cde2189:0x649ed93284ef3435!8m2!3d-25.4320386!4d-49.2647411!16s%2Fg%2F11g642ms3b?entry=ttu",
-  },
+  // {
+  //   text: "Pedro Ivo 379, 864-970 - Centro - Curtiba /PR",
+  //   href: "https://www.google.com.br/maps/place/R.+Pedro+Ivo,+864-970+-+Centro,+Curitiba+-+PR,+82590-300/@-25.4320374,-49.2659588,19z/data=!3m1!4b1!4m15!1m8!3m7!1s0x94dce35351cdb3dd:0x6d2f6ba5bacbe809!2sCuritiba,+PR!3b1!8m2!3d-25.4268985!4d-49.2651984!16zL20vMDI4bXBy!3m5!1s0x94dce46a6cde2189:0x649ed93284ef3435!8m2!3d-25.4320386!4d-49.2647411!16s%2Fg%2F11g642ms3b?entry=ttu",
+  // },
 ];
 
 const termsData = [
