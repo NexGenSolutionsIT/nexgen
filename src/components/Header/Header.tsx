@@ -16,10 +16,10 @@ const linksData = [
     text: "Inicio",
     href: "/",
   },
-  {
-    text: "Projetos",
-    href: "/projects",
-  },
+  // {
+  //   text: "Projetos",
+  //   href: "/projects",
+  // },
   {
     text: "Quem Somos",
     href: "/about",
@@ -36,8 +36,8 @@ function Header() {
 
   const getStyles = () => {
     switch (theme) {
-      case "light":
-        return light;
+      // case "light":
+      //   return light;
       default:
         return dark;
     }
@@ -49,7 +49,7 @@ function Header() {
     <header className={variantStyles.header}>
       <div className={variantStyles.logoContent}>
         <Image src={Logo} alt="" className={variantStyles.logo} />
-        <h2 className={variantStyles.title}>NEXGEN SOLUTIONS</h2>
+        <h2 className={variantStyles.title}>NEXGEN IT SOLUTIONS</h2>
       </div>
       <div className={variantStyles.links}>
         {linksData.map((link, index) => (
@@ -59,7 +59,7 @@ function Header() {
         ))}
       </div>
       <div className={variantStyles.button}>
-        <ThemeToggleButton />
+        {/* <ThemeToggleButton /> */}
         <Link href="/contact">
           <Button label="Contato" />
         </Link>

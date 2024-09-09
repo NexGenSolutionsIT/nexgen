@@ -8,6 +8,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import { useTheme } from "@/Context/ThemeContext";
+import Logo from "../../../public/logo.svg";
+import Image from "next/image";
 
 const nexgenData = [
   {
@@ -33,10 +35,10 @@ const resourcesData = [
     text: "Design",
     href: "/project",
   },
-  {
-    text: "Projetos",
-    href: "/projects",
-  },
+  // {
+  //   text: "Projetos",
+  //   href: "/projects",
+  // },
 ];
 
 const contactData = [
@@ -46,12 +48,12 @@ const contactData = [
   },
   {
     text: "contato@nexgen.com.br",
-    href: "alexandreosovski.contato@gmail.com",
+    href: "comercial@nexgensolutions.com.br",
   },
-  {
-    text: "Pedro Ivo 379, 864-970 - Centro - Curtiba /PR",
-    href: "https://www.google.com.br/maps/place/R.+Pedro+Ivo,+864-970+-+Centro,+Curitiba+-+PR,+82590-300/@-25.4320374,-49.2659588,19z/data=!3m1!4b1!4m15!1m8!3m7!1s0x94dce35351cdb3dd:0x6d2f6ba5bacbe809!2sCuritiba,+PR!3b1!8m2!3d-25.4268985!4d-49.2651984!16zL20vMDI4bXBy!3m5!1s0x94dce46a6cde2189:0x649ed93284ef3435!8m2!3d-25.4320386!4d-49.2647411!16s%2Fg%2F11g642ms3b?entry=ttu",
-  },
+  // {
+  //   text: "Pedro Ivo 379, 864-970 - Centro - Curtiba /PR",
+  //   href: "https://www.google.com.br/maps/place/R.+Pedro+Ivo,+864-970+-+Centro,+Curitiba+-+PR,+82590-300/@-25.4320374,-49.2659588,19z/data=!3m1!4b1!4m15!1m8!3m7!1s0x94dce35351cdb3dd:0x6d2f6ba5bacbe809!2sCuritiba,+PR!3b1!8m2!3d-25.4268985!4d-49.2651984!16zL20vMDI4bXBy!3m5!1s0x94dce46a6cde2189:0x649ed93284ef3435!8m2!3d-25.4320386!4d-49.2647411!16s%2Fg%2F11g642ms3b?entry=ttu",
+  // },
 ];
 
 const termsData = [
@@ -89,7 +91,23 @@ function Footer() {
       <div className={variantStyles.container_footer}>
         <div className={variantStyles.content}>
           <div className={variantStyles.column}>
-            <p className={variantStyles.subtitle}>Nexgen</p>
+            <p
+              className={variantStyles.subtitle}
+              style={{
+                textAlign: "center",
+                justifyContent: "center",
+                alignItems: "center",
+                display: "flex",
+              }}
+            >
+              <Image
+                src={Logo}
+                alt="Nexgen IT Solutions Logo"
+                className={variantStyles.logo}
+                style={{ width: "30px", marginRight: "10px" }}
+              />
+              NexGen{" "}
+            </p>
             {nexgenData.map((link, index) => (
               <Links key={index} href={link.href}>
                 {link.text}
@@ -112,22 +130,28 @@ function Footer() {
               </Links>
             ))}
           </div>
+          <div className={variantStyles.column}>
+            <p className={variantStyles.subtitle}>Redes Sociais</p>
+            <Links href="https://github.com/NexGenSolutionsIT" target="_blank">
+              <FaGithub className={variantStyles.icon} />
+              <span className={variantStyles.socialText}>&nbsp;GitHub</span>
+            </Links>
+
+            <Links href="https://twitter.com/NexGenSolutionsIT" target="_blank">
+              <FaXTwitter className={variantStyles.icon} />
+              <span className={variantStyles.socialText}>&nbsp;Twitter</span>
+            </Links>
+            <Links
+              href="https://www.linkedin.com/company/nexgen-systems-solutions/"
+              target="_blank"
+            >
+              <FaLinkedin className={variantStyles.icon} />
+              <span className={variantStyles.socialText}>&nbsp;Linkedin</span>
+            </Links>
+            {/* </div> */}
+          </div>
         </div>
         <div className={variantStyles.line}></div>
-        <div className={variantStyles.social}>
-          <Links href="https://github.com/NexGenSolutionsIT" target="_blank">
-            <FaGithub className={variantStyles.icon} />
-          </Links>
-          <Links href="https://github.com/NexGenSolutionsIT" target="_blank">
-            <FaXTwitter className={variantStyles.icon} />
-          </Links>
-          <Links
-            href="https://www.linkedin.com/company/nexgen-systems-solutions/"
-            target="_blank"
-          >
-            <FaLinkedin className={variantStyles.icon} />
-          </Links>
-        </div>
       </div>
       <div className={variantStyles.container_bottom}>
         <div>

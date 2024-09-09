@@ -69,7 +69,7 @@ function SectionTwo() {
         </p>
         <div className={variantStyles.links}>
           <Button label="Entrar em contato" />
-          <Links href="">
+          {/* <Links href="">
             {
               <div className={variantStyles.link}>
                 <p>Conheça nossos serviços</p>
@@ -78,7 +78,7 @@ function SectionTwo() {
                 </p>
               </div>
             }
-          </Links>
+          </Links> */}
         </div>
       </div>
       <div className={variantStyles.acordion_group}>
