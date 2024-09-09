@@ -16,10 +16,10 @@ const linksData = [
     text: "Inicio",
     href: "/",
   },
-  // {
-  //   text: "Projetos",
-  //   href: "/projects",
-  // },
+  {
+    text: "Projetos",
+    href: "/projects",
+  },
   {
     text: "Quem Somos",
     href: "/about",
@@ -36,8 +36,8 @@ function Header() {
 
   const getStyles = () => {
     switch (theme) {
-      // case "light":
-      //   return light;
+      case "light":
+        return light;
       default:
         return dark;
     }
@@ -59,7 +59,7 @@ function Header() {
         ))}
       </div>
       <div className={variantStyles.button}>
-        {/* <ThemeToggleButton /> */}
+        <ThemeToggleButton />
         <Link href="/contact">
           <Button label="Contato" />
         </Link>

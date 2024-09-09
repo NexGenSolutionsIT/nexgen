@@ -14,6 +14,14 @@ import nexgenLight from "../../../public/images/nexgen-light.svg";
 import nexgenDark from "../../../public/images/nexgen.svg";
 import { StaticImageData } from "next/image";
 
+type ImageKey =
+  | "neeforexLight"
+  | "neeforexDark"
+  | "cryptoWalletLight"
+  | "cryptoWalletDark"
+  | "nexgenLight"
+  | "nexgenDark";
+
 const images: Record<ImageKey, StaticImageData> = {
   neeforexLight,
   neeforexDark,
@@ -56,7 +64,7 @@ function Projects() {
 
             return (
               <Link
-                href={`/projects/${card.id}`}
+                href={`/projects/${card.path}`}
                 key={index}
                 className={variantStyles.link}
               >

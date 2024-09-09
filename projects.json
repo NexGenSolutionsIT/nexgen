@@ -1,65 +1,65 @@
 [
   {
-    "id": 0,
     "project": "Nee Forex",
     "href": "https://neeforex.vercel.app/",
     "imageLight": "neeforexLight",
     "imageDark": "neeforexDark",
     "alt": "Nee forex",
-    "link": "neeforex.com"
+    "link": "neeforex.com",
+    "path": "neeforex"
   },
   {
-    "id": 1,
     "project": "Crypto Wallet",
     "href": "https://wallet-crypto-tau.vercel.app/",
     "imageLight": "cryptoWalletLight",
     "imageDark": "cryptoWalletDark",
     "alt": "Wallet Crypto",
-    "link": "cryptoWallet.com"
+    "link": "cryptoWallet.com",
+    "path": "cryptowallet"
   },
   {
-    "id": 2,
     "project": "YouTube",
     "href": "https://www.youtube.com/",
     "imageLight": "cryptoWalletLight",
     "imageDark": "cryptoWalletDark",
     "alt": "youtube",
-    "link": "youtube.com"
+    "link": "youtube.com",
+    "path": "youtube"
   },
   {
-    "id": 3,
     "project": "Nexgen IT Solutions",
     "href": "https://nexgen-rho.vercel.app/",
     "imageLight": "nexgenLight",
     "imageDark": "nexgenDark",
     "alt": "Nexgen IT Solutions",
-    "link": "nexgenitsolutions.com"
+    "link": "nexgenitsolutions.com",
+    "path": "nexgen"
   },
   {
-    "id": 4,
     "project": "YouTube",
     "href": "https://www.youtube.com/",
     "imageLight": "cryptoWalletLight",
     "imageDark": "cryptoWalletDark",
     "alt": "youtube",
-    "link": "youtube.com"
+    "link": "youtube.com",
+    "path": "youtube"
   },
   {
-    "id": 5,
     "project": "YouTube",
     "href": "https://www.youtube.com/",
     "imageLight": "cryptoWalletLight",
     "imageDark": "cryptoWalletDark",
     "alt": "youtube",
-    "link": "youtube.com"
+    "link": "youtube.com",
+    "path": "youtube"
   },
   {
-    "id": 6,
     "project": "YouTube",
     "href": "https://www.youtube.com/",
     "imageLight": "cryptoWalletLight",
     "imageDark": "cryptoWalletDark",
     "alt": "youtube",
-    "link": "youtube.com"
+    "link": "youtube.com",
+    "path": "youtube"
   }
 ]
