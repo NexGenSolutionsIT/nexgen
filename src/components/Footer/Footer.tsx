@@ -33,10 +33,10 @@ const resourcesData = [
     text: "Design",
     href: "/project",
   },
-  {
-    text: "Projetos",
-    href: "/projects",
-  },
+  // {
+  //   text: "Projetos",
+  //   href: "/projects",
+  // },
 ];
 
 const contactData = [

@@ -16,10 +16,10 @@ const linksData = [
     text: "Inicio",
     href: "/",
   },
-  {
-    text: "Projetos",
-    href: "/projects",
-  },
+  // {
+  //   text: "Projetos",
+  //   href: "/projects",
+  // },
   {
     text: "Quem Somos",
     href: "/about",
