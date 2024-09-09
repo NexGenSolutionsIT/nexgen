@@ -1,0 +1,72 @@
+@import "../../../styles/variables.scss";
+
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .sectionOne {
+    width: 420px;
+    height: 336px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .title {
+      font-size: 80px;
+      font-weight: 700;
+
+      .markTitle {
+        background: $gradientUp;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    .paragraph {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .sectionTwo {
+    .form {
+      width: 530px;
+      height: 336px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .info {
+        display: flex;
+        justify-content: space-between;
+
+        .inputs {
+          display: flex;
+          flex-direction: column;
+
+          .input {
+            background: transparent;
+            width: 240px;
+            height: 32px;
+            margin-top: 8px;
+            font-family: Ubuntu;
+          }
+        }
+      }
+      .message {
+        display: flex;
+        flex-direction: column;
+
+        .textarea {
+          background: transparent;
+          width: 100%;
+          margin-top: 8px;
+          font-family: Ubuntu;
+        }
+      }
+    }
+  }
+}

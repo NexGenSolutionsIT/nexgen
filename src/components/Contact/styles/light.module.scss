@@ -1,0 +1,18 @@
+@import "./commun.module.scss";
+
+.section {
+  background-color: $beige;
+  color: $black;
+
+  .input {
+    border: none;
+    border-bottom: 1px solid $black20;
+    color: $black;
+  }
+
+  .textarea {
+    color: $black;
+    border: none;
+    border-bottom: 1px solid $black20;
+  }
+}
