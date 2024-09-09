@@ -1,0 +1,19 @@
+@import "./commun.module.scss";
+
+.container {
+  background: $black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .title {
+    margin-top: 208px;
+    font-size: 32px;
+    font-weight: 400;
+    color: $light40;
+  }
+
+  .text {
+    color: $light80;
+  }
+}

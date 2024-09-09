@@ -80,7 +80,7 @@ function Slide() {
             <Image
               src={arrowSrc}
               alt="Seta para a direita"
-              style={{ marginLeft: "8px" }} // Adiciona espaço entre o texto e a imagem
+              style={{ marginLeft: "8px" }}
             />
           </a>
         </div>
