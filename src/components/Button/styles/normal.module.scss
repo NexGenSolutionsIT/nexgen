@@ -2,8 +2,10 @@
 
 .button {
   background: $primary;
+  transition: 0.3s;
 
   &:hover {
+    transition: 0.3s;
     background: transparent;
     color: $primary;
   }

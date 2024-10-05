@@ -8,9 +8,10 @@
   border-radius: 5px;
   color: $light;
   cursor: pointer;
+  transition: 0.3s;
 
   &:hover {
-    transition: 0.5s;
+    transition: 0.3s;
   }
 
   &:active {

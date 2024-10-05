@@ -1,10 +1,10 @@
+"use client";
 import React, { useState, useEffect } from "react";
 import dark from "./styles/dark.module.scss";
 import light from "./styles/light.module.scss";
 import { useTheme } from "@/Context/ThemeContext";
 import Image from "next/image";
 import Hero from "../../../../../public/images/Hero.png";
-import { motion, AnimatePresence } from "framer-motion";
 import arrowSrc from "/public/BsArrowRight.svg";
 import initialImage from "/public/Image.svg";
 
@@ -13,6 +13,7 @@ const images = [Hero, Hero, Hero];
 function Slide() {
   const { theme } = useTheme();
   const [current, setCurrent] = useState(0);
+  const [isClient, setIsClient] = useState(false); // Novo estado para controlar o lado do cliente
 
   const getStyles = () => {
     switch (theme) {
@@ -23,7 +24,9 @@ function Slide() {
     }
   };
 
+  // Garantindo que o código só é executado no lado do cliente
   useEffect(() => {
+    setIsClient(true); // Definindo que o componente foi montado no cliente
     const interval = setInterval(() => {
       setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1));
     }, 3000);
@@ -31,6 +34,10 @@ function Slide() {
   }, []);
 
   const variantStyles = getStyles();
+
+  if (!isClient) {
+    return null;
+  }
 
   return (
     <div className={variantStyles.container}>
@@ -96,37 +103,8 @@ function Slide() {
             className="dark_image__gaDTd"
             style={{ width: "100%", height: "auto", marginBottom: "20%" }}
           />
-          {/* <img src="/_next/static/media/Group.71fb7aff.svg" /> */}
         </div>
       </div>
-
-      {/* <AnimatePresence initial={false} custom={current}> */}
-      {/* <motion.div
-          key={current}
-          initial={{ x: 300, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          exit={{ x: -300, opacity: 0 }}
-          transition={{ duration: 1, ease: "easeIn" }}
-          classNameName={variantStyles.imageWrapper}
-        >
-          <Image
-            alt={`Hero ${current + 1}`}
-            src={images[current]}
-            layout="fill"
-            objectFit="cover"
-          />
-        </motion.div> */}
-      {/* </AnimatePresence> */}
-      {/* <div classNameName={variantStyles.indicators}>
-        {images.map((_, index) => (
-          <span
-            key={index}
-            classNameName={`${variantStyles.indicator} ${
-              index === current ? variantStyles.active : ""
-            }`}
-          />
-        ))}
-      </div> */}
     </div>
   );
 }

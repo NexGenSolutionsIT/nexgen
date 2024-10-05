@@ -12,6 +12,8 @@ import cryptoWalletLight from "../../../public/images/crypto-wallet-light.png";
 import cryptoWalletDark from "../../../public/images/crypto-wallet.png";
 import nexgenLight from "../../../public/images/nexgen-light.svg";
 import nexgenDark from "../../../public/images/nexgen.svg";
+import youtubeDark from "../../../public/images/youtubeDark.svg";
+import youtubeLight from "../../../public/images/youtubeLight.svg";
 import { StaticImageData } from "next/image";
 
 type ImageKey =
@@ -20,6 +22,8 @@ type ImageKey =
   | "cryptoWalletLight"
   | "cryptoWalletDark"
   | "nexgenLight"
+  | "youtubeLight"
+  | "youtubeDark"
   | "nexgenDark";
 
 const images: Record<ImageKey, StaticImageData> = {
@@ -28,6 +32,8 @@ const images: Record<ImageKey, StaticImageData> = {
   cryptoWalletLight,
   cryptoWalletDark,
   nexgenLight,
+  youtubeLight,
+  youtubeDark,
   nexgenDark,
 };
 
