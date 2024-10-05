@@ -6,7 +6,21 @@
     "imageDark": "neeforexDark",
     "alt": "Nee forex",
     "link": "neeforex.com",
-    "path": "neeforex"
+    "path": "neeforex",
+    "images": ["neeforex5", "neeforex2", "neeforex3", "neeforex4", "neeforex1"],
+    "text": [
+      "Nee Forex é uma plataforma de trading de última geração, projetada para atender traders de todos os níveis, desde iniciantes até profissionais experientes. Focada no mercado de câmbio (Forex), a plataforma oferece um ambiente seguro e intuitivo para realizar operações de compra e venda de moedas. Com uma interface moderna e ferramentas avançadas, Nee Forex garante que os usuários possam maximizar suas oportunidades de investimento em um dos mercados mais líquidos do mundo.",
+
+      "A plataforma se destaca por oferecer uma experiência de trading totalmente personalizada, com recursos que permitem a criação de estratégias sob medida. Nee Forex integra uma ampla gama de indicadores técnicos, gráficos em tempo real e ferramentas de análise detalhada, capacitando os traders a tomar decisões bem informadas. Além disso, a plataforma oferece suporte a múltiplas contas de trading e permite que os usuários gerenciem portfólios diversificados de maneira simples e eficaz.",
+
+      "Nee Forex está comprometida em fornecer as melhores condições de trading para seus usuários, oferecendo spreads competitivos, alta alavancagem e execução rápida de ordens. A plataforma também oferece contas de demonstração, permitindo que novos traders pratiquem suas estratégias sem risco financeiro. Com suporte para diversos pares de moedas e uma ampla gama de ativos financeiros, a Nee Forex oferece uma experiência de trading versátil e completa.",
+
+      "A segurança é uma prioridade na Nee Forex. A plataforma utiliza tecnologia de criptografia avançada para proteger todas as transações e dados dos usuários. Além disso, Nee Forex segue rigorosamente as regulamentações internacionais do mercado financeiro, garantindo que seus serviços estejam em conformidade com os mais altos padrões de segurança. Com um ambiente de trading seguro, os traders podem operar com confiança, sabendo que seus fundos e informações estão protegidos.",
+
+      "Um dos grandes diferenciais da Nee Forex é seu suporte ao cliente. A equipe de atendimento está disponível 24 horas por dia, 5 dias por semana, para ajudar os traders em qualquer dúvida ou problema técnico. A plataforma oferece suporte em várias línguas e conta com uma equipe altamente qualificada, pronta para fornecer assistência em tempo real via chat, e-mail ou telefone. Esse suporte dedicado garante que os traders tenham uma experiência de trading tranquila e eficiente.",
+
+      "Além de ser uma plataforma robusta para trading, a Nee Forex também oferece uma ampla gama de materiais educacionais para ajudar os traders a aprimorar seus conhecimentos sobre o mercado Forex. Desde webinars e tutoriais até artigos e guias detalhados, a Nee Forex se dedica a capacitar seus usuários, ajudando-os a se tornarem traders mais bem-sucedidos. Com essa abordagem educativa, a plataforma se posiciona não apenas como um local de trading, mas também como uma ferramenta de aprendizado e crescimento contínuo no mercado financeiro."
+    ]
   },
   {
     "project": "Crypto Wallet",
@@ -15,16 +29,21 @@
     "imageDark": "cryptoWalletDark",
     "alt": "Wallet Crypto",
     "link": "cryptoWallet.com",
-    "path": "cryptowallet"
-  },
-  {
-    "project": "YouTube",
-    "href": "https://www.youtube.com/",
-    "imageLight": "cryptoWalletLight",
-    "imageDark": "cryptoWalletDark",
-    "alt": "youtube",
-    "link": "youtube.com",
-    "path": "youtube"
+    "path": "cryptowallet",
+    "images": ["crypto1", "crypto3", "crypto2"],
+    "text": [
+      "A Crypto Wallet é uma plataforma segura e inovadora para armazenamento, gestão e transações de criptomoedas. Projetada para atender tanto iniciantes quanto usuários avançados, a Crypto Wallet oferece uma interface intuitiva que facilita o gerenciamento de ativos digitais. Com suporte a diversas criptomoedas populares, incluindo Bitcoin, Ethereum e uma ampla variedade de tokens, a plataforma se destaca pela facilidade de uso e pela robustez de suas funcionalidades.",
+
+      "A segurança é um dos pilares fundamentais da Crypto Wallet. Utilizamos tecnologias de ponta para garantir que os ativos dos usuários estejam protegidos, incluindo criptografia avançada e autenticação multifator (MFA). Além disso, a plataforma segue rigorosos padrões de segurança do setor, oferecendo um ambiente seguro para realizar transações. Os usuários podem armazenar suas criptomoedas em carteiras seguras, com a tranquilidade de que seus fundos estão protegidos contra acessos não autorizados.",
+
+      "A Crypto Wallet oferece uma experiência completa para seus usuários, permitindo a compra, venda e troca de criptomoedas de forma rápida e eficiente. Com taxas competitivas e execução de ordens em tempo real, a plataforma se adapta às necessidades de traders que buscam maximizar seus ganhos no mercado de criptomoedas. A funcionalidade de conversão entre diferentes criptomoedas facilita a diversificação de portfólios, e as atualizações de preços em tempo real ajudam os usuários a tomar decisões de investimento informadas.",
+
+      "Uma das principais características da Crypto Wallet é seu foco na usabilidade. A plataforma foi desenvolvida para ser acessível a todos os tipos de usuários, desde iniciantes que estão dando seus primeiros passos no mercado de criptomoedas até investidores experientes. Com tutoriais passo a passo, suporte ao cliente em tempo real e uma interface clara, os usuários podem gerenciar seus ativos digitais com facilidade e confiança, independentemente do nível de experiência.",
+
+      "Além de fornecer uma plataforma para armazenamento e transações, a Crypto Wallet também oferece uma ampla gama de funcionalidades de segurança adicionais, como a possibilidade de armazenar criptomoedas em carteiras frias (offline) e a função de backup e recuperação de chaves privadas. Essas funcionalidades garantem que os usuários tenham controle total sobre seus ativos, minimizando riscos e garantindo maior segurança em um mercado volátil como o de criptomoedas.",
+
+      "A Crypto Wallet se compromete a continuar evoluindo e melhorando suas ofertas para atender às necessidades de um mercado em constante mudança. Com a crescente adoção de criptomoedas em todo o mundo, a plataforma busca se posicionar como líder no setor, oferecendo uma experiência de usuário incomparável e segurança de nível superior. Seja para investir, negociar ou armazenar criptomoedas, a Crypto Wallet é a solução ideal para quem deseja entrar de forma segura e eficiente no universo das moedas digitais."
+    ]
   },
   {
     "project": "Nexgen IT Solutions",
@@ -33,33 +52,38 @@
     "imageDark": "nexgenDark",
     "alt": "Nexgen IT Solutions",
     "link": "nexgenitsolutions.com",
-    "path": "nexgen"
+    "path": "nexgen",
+    "images": ["nexgen1", "nexgen2", "nexgen3", "nexgen4"],
+    "text": [
+      "A Nexgen IT Solutions é uma empresa líder em soluções tecnológicas, especializada em oferecer serviços inovadores e personalizados para empresas que buscam otimizar seus processos e alcançar melhores resultados com o uso da tecnologia.",
+      "Nossa equipe é composta por profissionais altamente qualificados, com vasta experiência em desenvolvimento de software, consultoria em TI e gestão de projetos. Trabalhamos lado a lado com nossos clientes para entender suas necessidades e criar soluções sob medida que se ajustem aos seus objetivos de negócio.",
+      "A Nexgen é reconhecida pela sua capacidade de transformar desafios complexos em oportunidades, entregando soluções robustas e escaláveis que garantem a continuidade e o crescimento dos negócios. Seja na automação de processos, implementação de sistemas ou integração de novas tecnologias, estamos preparados para entregar resultados excepcionais.",
+      "Oferecemos uma gama completa de serviços, incluindo desenvolvimento de software, cloud computing, segurança cibernética e suporte técnico contínuo. Nosso portfólio de soluções é projetado para ajudar empresas de todos os portes a se adaptarem rapidamente às mudanças do mercado e se destacarem em um ambiente competitivo.",
+      "Na Nexgen IT Solutions, a inovação está no nosso DNA. Estamos sempre na vanguarda das novas tecnologias, utilizando metodologias ágeis e ferramentas modernas para garantir que nossos clientes tenham acesso às soluções mais avançadas e eficientes.",
+      "Nosso compromisso vai além da entrega de soluções tecnológicas. A Nexgen se dedica a construir parcerias de longo prazo com seus clientes, focando na excelência operacional, no atendimento de qualidade e na entrega de valor sustentável para cada negócio que atendemos."
+    ]
   },
   {
     "project": "YouTube",
     "href": "https://www.youtube.com/",
-    "imageLight": "cryptoWalletLight",
-    "imageDark": "cryptoWalletDark",
+    "imageLight": "youtubeLight",
+    "imageDark": "youtubeDark",
     "alt": "youtube",
     "link": "youtube.com",
-    "path": "youtube"
-  },
-  {
-    "project": "YouTube",
-    "href": "https://www.youtube.com/",
-    "imageLight": "cryptoWalletLight",
-    "imageDark": "cryptoWalletDark",
-    "alt": "youtube",
-    "link": "youtube.com",
-    "path": "youtube"
-  },
-  {
-    "project": "YouTube",
-    "href": "https://www.youtube.com/",
-    "imageLight": "cryptoWalletLight",
-    "imageDark": "cryptoWalletDark",
-    "alt": "youtube",
-    "link": "youtube.com",
-    "path": "youtube"
+    "path": "youtube",
+    "images": ["yt-image1", "yt-image2"],
+    "text": [
+      "A Nexgen IT Solutions é uma empresa de tecnologia de ponta que se destaca na entrega de soluções inovadoras e personalizadas para o mercado corporativo. Com mais de uma década de experiência no setor, a Nexgen se posiciona como uma parceira estratégica para empresas que desejam transformar digitalmente seus processos, melhorar sua eficiência operacional e impulsionar o crescimento de seus negócios através da tecnologia. Nossa missão é fornecer soluções de TI que não apenas resolvam os desafios atuais, mas também posicionem nossos clientes à frente da concorrência no futuro digital.",
+
+      "Na Nexgen, oferecemos uma gama completa de serviços de tecnologia, que inclui desde o desenvolvimento de software sob medida até a implementação de soluções de cloud computing, segurança cibernética e automação de processos. Nosso diferencial está na capacidade de entender as necessidades exclusivas de cada cliente e entregar soluções tecnológicas adaptadas, que otimizam a produtividade e reduzem custos operacionais. Cada projeto é tratado com um nível de personalização que garante que as soluções atendam exatamente às demandas de cada negócio, independentemente do setor ou porte da empresa.",
+
+      "A equipe da Nexgen é composta por especialistas em TI com amplo conhecimento nas mais recentes tecnologias e metodologias ágeis, incluindo DevOps, integração contínua e entrega contínua (CI/CD), além de frameworks de desenvolvimento modernos como React, Node.js, Python, entre outros. Trabalhamos em estreita colaboração com nossos clientes para garantir que cada solução seja entregue no prazo, dentro do orçamento e com a mais alta qualidade. Nossos processos são projetados para garantir flexibilidade e escalabilidade, permitindo que as empresas cresçam sem se preocupar com limitações tecnológicas.",
+
+      "Além de oferecer serviços de desenvolvimento de software, a Nexgen IT Solutions também é especializada em consultoria tecnológica. Nossos consultores de TI atuam como verdadeiros parceiros estratégicos, ajudando empresas a identificar oportunidades de melhorias tecnológicas, migrar para ambientes em nuvem, implementar soluções de segurança avançadas e adotar novas tecnologias que promovam a inovação e competitividade. Com a crescente necessidade de segurança cibernética e proteção de dados, a Nexgen também oferece soluções robustas para proteger as operações de seus clientes contra ameaças digitais.",
+
+      "O compromisso da Nexgen IT Solutions com a inovação é uma de suas marcas registradas. Estamos constantemente explorando novas tecnologias emergentes, como inteligência artificial (IA), aprendizado de máquina, Internet das Coisas (IoT) e blockchain, para incorporar em nossas soluções. Essa mentalidade de inovação contínua nos permite oferecer aos nossos clientes as ferramentas mais avançadas e preparadas para o futuro, garantindo que eles estejam sempre à frente da concorrência em um mercado em constante mudança. Acreditamos que a transformação digital é a chave para o sucesso no ambiente empresarial moderno, e estamos prontos para liderar essa mudança ao lado dos nossos clientes.",
+
+      "Na Nexgen IT Solutions, nosso foco vai além da entrega de soluções tecnológicas. Trabalhamos com um modelo de parceria de longo prazo, visando o crescimento sustentável dos nossos clientes. Nosso suporte técnico é contínuo e proativo, garantindo que os sistemas de TI estejam sempre operando no máximo desempenho e sem interrupções. Seja no desenvolvimento de novos sistemas, na manutenção de infraestruturas tecnológicas existentes ou na implementação de novos recursos, estamos comprometidos em entregar soluções que gerem valor real para os negócios, aumentem a eficiência e promovam a inovação no longo prazo."
+    ]
   }
 ]

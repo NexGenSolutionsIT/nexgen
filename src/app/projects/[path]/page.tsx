@@ -8,17 +8,13 @@ import Slide from "@/components/Slide/Slide";
 import data from "../../../../projects.json";
 
 interface ProjectProps {
-  params: { project: string };
+  params: { path: string };
 }
 
 function Project({ params }: ProjectProps) {
-  const { project } = params;
+  const { path } = params;
 
-  console.log("Parâmetro da rota:", project);
-
-  const projectData = data.find((item) => item.path === project);
-
-  console.log("Projeto encontrado:", projectData);
+  const projectData = data.find((item) => item.path === path);
 
   const { theme } = useTheme();
   const getStyles = () => {
@@ -31,28 +27,26 @@ function Project({ params }: ProjectProps) {
   };
   const variantStyles = getStyles();
 
-  // Caso o projeto não seja encontrado
   if (!projectData) {
     return <div className={variantStyles.container}>Project not found</div>;
   }
+
+  const images = projectData.images.map(
+    (image) => `/images/Projects/${image}.png`
+  );
 
   return (
     <div className={variantStyles.container}>
       <h1 className={variantStyles.title}>{projectData.project}</h1>
       <div className={variantStyles.slide}>
-        <Slide />
+        <Slide images={images} />
       </div>
       <div className={variantStyles.text}>
-        {/* Conteúdo do projeto */}
-        <div className={variantStyles.subtext}>
-          YouTube é uma plataforma digital inovadora e líder global no
-          compartilhamento de vídeos, que se consolidou como o ponto de encontro
-          para criadores de conteúdo e espectadores de todo o mundo. Lançada com
-          o objetivo de democratizar a produção e o consumo de vídeos, YouTube
-          oferece a qualquer pessoa com uma câmera e uma conexão à internet a
-          chance de alcançar uma audiência global, independentemente de sua
-          localização ou recursos financeiros.
-        </div>
+        {projectData.text.map((paragraph, index) => (
+          <div key={index} className={variantStyles.subtext}>
+            {paragraph}
+          </div>
+        ))}
       </div>
       <div className={variantStyles.contact}>
         <Contact />

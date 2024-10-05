@@ -9,8 +9,8 @@ function SectionOne() {
   const { theme } = useTheme();
   const getStyles = () => {
     switch (theme) {
-      // case "light":
-      // return light;
+      case "light":
+        return light;
       default:
         return dark;
     }
