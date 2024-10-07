@@ -1,5 +1,12 @@
 @import "./common.module.scss";
 
 .container {
-  background: $black;
+  background: $dark;
+}
+
+.title {
+  color: $light;
+}
+.subtitle {
+  color: $light;
 }
