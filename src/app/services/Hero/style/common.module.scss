@@ -1,0 +1,39 @@
+@import "../../../../styles/variables.scss";
+
+.container {
+  box-sizing: border-box;
+  padding-top: 164px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .text {
+      text-align: center;
+      width: 920px;
+
+      .title {
+        margin-bottom: 32px;
+        font-size: 64px;
+        color: $light;
+        font-weight: 700;
+        .gradient {
+          background: $gradientUp;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      .subtitle {
+        margin-bottom: 64px;
+        color: $light;
+      }
+    }
+  }
+}

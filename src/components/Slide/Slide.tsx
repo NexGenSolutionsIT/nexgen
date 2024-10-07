@@ -4,10 +4,16 @@ import Image from "next/image";
 import styles from "./Slide.module.scss";
 
 interface SlideProps {
-  images: string[]; // Definimos que as imagens serão passadas por props
+  images: string[];
+  variant?: "full" | "medium";
+  showOverlay?: boolean;
 }
 
-export default function Slide({ images }: SlideProps) {
+export default function Slide({
+  images,
+  variant = "medium",
+  showOverlay = true,
+}: SlideProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [direction, setDirection] = useState(1);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
@@ -15,11 +21,6 @@ export default function Slide({ images }: SlideProps) {
   const nextSlide = () => {
     setDirection(1);
     setCurrentSlide((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-  };
-
-  const prevSlide = () => {
-    setDirection(-1);
-    setCurrentSlide((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
   useEffect(() => {
@@ -48,7 +49,9 @@ export default function Slide({ images }: SlideProps) {
   };
 
   return (
-    <div className={styles.container}>
+    <div
+      className={`${styles.container} ${variant === "full" ? styles.full : styles.medium}`}
+    >
       <AnimatePresence initial={false} custom={direction}>
         <motion.div
           key={currentSlide}
@@ -82,16 +85,14 @@ export default function Slide({ images }: SlideProps) {
         </motion.div>
       </AnimatePresence>
 
-      {/* Overlay com gradiente */}
-      <div className={styles.overlay}></div>
+      {/* Overlay opcional */}
+      {showOverlay && <div className={styles.overlay}></div>}
 
       <div className={styles.dots}>
         {images.map((_, index) => (
           <span
             key={index}
-            className={`${styles.dot} ${
-              index === currentSlide ? styles.active : ""
-            }`}
+            className={`${styles.dot} ${index === currentSlide ? styles.active : ""}`}
             onClick={() => {
               setDirection(index > currentSlide ? 1 : -1);
               setCurrentSlide(index);

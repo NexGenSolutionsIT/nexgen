@@ -13,7 +13,7 @@ const images = [Hero, Hero, Hero];
 function Slide() {
   const { theme } = useTheme();
   const [current, setCurrent] = useState(0);
-  const [isClient, setIsClient] = useState(false); // Novo estado para controlar o lado do cliente
+  const [isClient, setIsClient] = useState(false);
 
   const getStyles = () => {
     switch (theme) {
@@ -24,9 +24,8 @@ function Slide() {
     }
   };
 
-  // Garantindo que o código só é executado no lado do cliente
   useEffect(() => {
-    setIsClient(true); // Definindo que o componente foi montado no cliente
+    setIsClient(true);
     const interval = setInterval(() => {
       setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1));
     }, 3000);
