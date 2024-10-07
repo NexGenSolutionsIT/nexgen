@@ -39,7 +39,7 @@ function Project({ params }: ProjectProps) {
     <div className={variantStyles.container}>
       <h1 className={variantStyles.title}>{projectData.project}</h1>
       <div className={variantStyles.slide}>
-        <Slide images={images} />
+        <Slide images={images} variant="medium" />
       </div>
       <div className={variantStyles.text}>
         {projectData.text.map((paragraph, index) => (

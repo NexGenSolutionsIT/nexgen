@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { useTheme } from "@/Context/ThemeContext";
 import light from "./style/light.module.scss";
@@ -22,12 +23,12 @@ function Hero() {
   return (
     <div className={variantStyles.container}>
       <div className={variantStyles.content}>
-        <div>
+        <div className={variantStyles.text}>
           <h1 className={variantStyles.title}>
             Tecnologia e Criatividade Unificadas para o{" "}
             <span className={variantStyles.gradient}>Seu Negócio</span>
           </h1>
-          <h2 className={variantStyles.subtext}>
+          <h2 className={variantStyles.subtitle}>
             Tecnologia e criatividade em perfeita sintonia, desenvolvendo
             soluções estratégicas e personalizadas para levar sua empresa ao
             próximo nível de inovação e resultados.
