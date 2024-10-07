@@ -4,4 +4,15 @@
   color: $black !important;
   background: $light;
   z-index: -2;
+
+  .overlay {
+    background: linear-gradient(
+      90deg,
+      rgb(255, 255, 255) 0%,
+      rgba(255, 255, 255, 0.8) 40%,
+      rgba(255, 255, 255, 0.6) 60%,
+      rgba(255, 255, 255, 0.4) 80%,
+      rgba(255, 255, 255, 0.4) 100%
+    );
+  }
 }

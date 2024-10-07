@@ -8,6 +8,7 @@ import Background from "../../../../public/images/cellphone-background.svg";
 
 function SectionTwo() {
   const { theme } = useTheme();
+
   const getStyles = () => {
     switch (theme) {
       case "light":
@@ -20,12 +21,17 @@ function SectionTwo() {
 
   return (
     <section className={variantStyles.sectionTwo}>
-      <div>
+      <div className={variantStyles.imageWrapper}>
+        <div className={variantStyles.overlay}></div>
         <Image
           alt="background"
           src={Background}
-          layout="fill"
-          objectFit="cover"
+          objectFit="contain"
+          // layout="fill"
+          quality={100}
+          priority
+          unoptimized
+          draggable={false}
           className={variantStyles.image}
         />
       </div>
