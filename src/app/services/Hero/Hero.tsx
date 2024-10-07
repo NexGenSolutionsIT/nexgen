@@ -22,6 +22,8 @@ function Hero() {
   const variantStyles = getStyles();
   return (
     <div className={variantStyles.container}>
+      <div className={variantStyles.circle_primary}></div>
+      <div className={variantStyles.circle_secundary}></div>
       <div className={variantStyles.content}>
         <div className={variantStyles.text}>
           <h1 className={variantStyles.title}>
@@ -34,7 +36,12 @@ function Hero() {
             próximo nível de inovação e resultados.
           </h2>
         </div>
-        <Button label="Solicitar orçamento" type="button" variant="normal" />
+        <Button
+          label="Solicitar orçamento"
+          type="button"
+          variant="normal"
+          disabled={false}
+        />
       </div>
       <div className={variantStyles.image}>
         <Image
