@@ -1,1 +1,21 @@
 @import "./commun.module.scss";
+
+.sectionOne {
+  background: $beige;
+  .content {
+    .text_box {
+      .title {
+        color: $dark;
+
+        .gradient {
+        }
+      }
+      .subtitle {
+        color: $dark;
+      }
+    }
+  }
+
+  .buttons_box {
+  }
+}

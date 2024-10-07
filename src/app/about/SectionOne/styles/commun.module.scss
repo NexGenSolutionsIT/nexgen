@@ -2,4 +2,43 @@
 
 .sectionOne {
   height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    .text_box {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .title {
+        font-size: 64px;
+        font-weight: 700;
+        color: $light;
+        width: 660px;
+        .gradient {
+          background: $gradientUp;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .subtitle {
+        width: 548px;
+        color: $light;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .buttons_box {
+    display: flex;
+    gap: 16px;
+  }
 }

@@ -54,7 +54,7 @@ function Contact() {
               rows={3}
               cols={50}
               className={variantStyles.textarea}
-              defaultValue="Olá, acho que precisamos de um sistema de design para nossos produtos na Empresa X. Quando você pode entrar em contato para discutir isso?"
+              placeholder="Olá, acho que precisamos de um sistema para nossa Empresa. Quando você pode entrar em contato para discutir isso?"
             />
           </div>
           <Button label="Enviar" type="submit" variant="mobile" />

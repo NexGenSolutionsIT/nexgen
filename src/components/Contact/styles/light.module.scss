@@ -8,11 +8,19 @@
     border: none;
     border-bottom: 1px solid $black20;
     color: $black;
+    &:focus {
+      transition: 0.3s ease;
+      border-bottom: 1px solid $primary;
+    }
   }
 
   .textarea {
     color: $black;
     border: none;
     border-bottom: 1px solid $black20;
+    &:focus {
+      transition: 0.3s ease;
+      border-bottom: 1px solid $primary;
+    }
   }
 }
