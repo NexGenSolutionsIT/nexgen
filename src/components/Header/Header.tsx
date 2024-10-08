@@ -59,7 +59,7 @@ function Header() {
         ))}
       </div>
       <div className={variantStyles.button}>
-        <ThemeToggleButton />
+        {/* <ThemeToggleButton /> */}
         <Link href="/contact">
           <Button label="Contato" />
         </Link>
