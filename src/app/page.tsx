@@ -1,9 +1,9 @@
-import Home from "./home/page";
+import Services from "./services/page";
 
 export default function App() {
   return (
     <>
-      <Home />
+      <Services />
     </>
   );
 }

@@ -1,164 +1,164 @@
-@import "../../../styles/variables.scss";
+// @import "../../../styles/variables.scss";
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    opacity: 0.7;
-  }
-  50% {
-    transform: scale(200);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0.7;
-  }
-}
+// @keyframes pulse {
+//   0% {
+//     transform: scale(1);
+//     opacity: 0.7;
+//   }
+//   50% {
+//     transform: scale(200);
+//     opacity: 1;
+//   }
+//   100% {
+//     transform: scale(1);
+//     opacity: 0.7;
+//   }
+// }
 
-@keyframes movePrimary {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(200px, 100px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
+// @keyframes movePrimary {
+//   0% {
+//     transform: translate(0, 0);
+//   }
+//   50% {
+//     transform: translate(200px, 100px);
+//   }
+//   100% {
+//     transform: translate(0, 0);
+//   }
+// }
 
-@keyframes moveSecondary {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(-200px, 100px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
+// @keyframes moveSecondary {
+//   0% {
+//     transform: translate(0, 0);
+//   }
+//   50% {
+//     transform: translate(-200px, 100px);
+//   }
+//   100% {
+//     transform: translate(0, 0);
+//   }
+// }
 
-.container {
-  background: $dark;
-  box-sizing: border-box;
-  padding-top: 164px;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  z-index: 0;
-  overflow-x: hidden;
-  position: relative;
+// .container {
+//   background: $dark;
+//   box-sizing: border-box;
+//   padding-top: 164px;
+//   height: 100vh;
+//   width: 100vw;
+//   display: flex;
+//   justify-content: space-between;
+//   flex-direction: column;
+//   align-items: center;
+//   z-index: 0;
+//   overflow-x: hidden;
+//   position: relative;
 
-  .circle_primary,
-  .circle_secundary {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    filter: blur(100px);
-    position: absolute;
-    z-index: 1;
+//   .circle_primary,
+//   .circle_secundary {
+//     width: 300px;
+//     height: 300px;
+//     border-radius: 50%;
+//     filter: blur(100px);
+//     position: absolute;
+//     z-index: 1;
 
-    @media (max-width: 768px) {
-      width: 200px;
-      height: 200px;
-      filter: blur(60px);
-    }
+//     @media (max-width: 768px) {
+//       width: 200px;
+//       height: 200px;
+//       filter: blur(60px);
+//     }
 
-    @media (max-width: 480px) {
-      width: 150px;
-      height: 150px;
-      filter: blur(50px);
-    }
-  }
+//     @media (max-width: 480px) {
+//       width: 150px;
+//       height: 150px;
+//       filter: blur(50px);
+//     }
+//   }
 
-  .circle_primary {
-    background-color: $primary;
-    top: 0;
-    left: -100px;
-    animation:
-      pulse 4s ease-in-out infinite,
-      movePrimary 10s ease-in-out infinite;
+//   .circle_primary {
+//     background-color: $primary;
+//     top: 0;
+//     left: -100px;
+//     animation:
+//       pulse 4s ease-in-out infinite,
+//       movePrimary 10s ease-in-out infinite;
 
-    @media (max-width: 768px) {
-      left: -50px;
-    }
-  }
+//     @media (max-width: 768px) {
+//       left: -50px;
+//     }
+//   }
 
-  .circle_secundary {
-    background-color: $secundary;
-    bottom: 400px;
-    right: -200px;
-    animation:
-      pulse 4s ease-in-out infinite,
-      moveSecondary 10s ease-in-out infinite;
-    animation-delay: 2s;
+//   .circle_secundary {
+//     background-color: $secundary;
+//     bottom: 400px;
+//     right: -200px;
+//     animation:
+//       pulse 4s ease-in-out infinite,
+//       moveSecondary 10s ease-in-out infinite;
+//     animation-delay: 2s;
 
-    @media (max-width: 768px) {
-      bottom: 200px;
-      right: -100px;
-    }
-  }
+//     @media (max-width: 768px) {
+//       bottom: 200px;
+//       right: -100px;
+//     }
+//   }
 
-  .content {
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+//   .content {
+//     z-index: 3;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
 
-    .text {
-      text-align: center;
-      width: 920px;
+//     .text {
+//       text-align: center;
+//       width: 920px;
 
-      @media (max-width: 768px) {
-        width: 80%;
-      }
+//       @media (max-width: 768px) {
+//         width: 80%;
+//       }
 
-      .title {
-        margin-bottom: 32px;
-        font-size: 64px;
-        font-weight: 700;
-        color: $light;
+//       .title {
+//         margin-bottom: 32px;
+//         font-size: 64px;
+//         font-weight: 700;
+//         color: $light;
 
-        @media (max-width: 768px) {
-          font-size: 48px;
-        }
+//         @media (max-width: 768px) {
+//           font-size: 48px;
+//         }
 
-        @media (max-width: 480px) {
-          font-size: 36px;
-        }
+//         @media (max-width: 480px) {
+//           font-size: 36px;
+//         }
 
-        .gradient {
-          background: $gradientUp;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-      }
+//         .gradient {
+//           background: $gradientUp;
+//           -webkit-background-clip: text;
+//           -webkit-text-fill-color: transparent;
+//         }
+//       }
 
-      .subtitle {
-        margin-bottom: 64px;
-        color: $light;
+//       .subtitle {
+//         margin-bottom: 64px;
+//         color: $light;
 
-        @media (max-width: 768px) {
-          font-size: 18px;
-        }
+//         @media (max-width: 768px) {
+//           font-size: 18px;
+//         }
 
-        @media (max-width: 480px) {
-          font-size: 16px;
-        }
-      }
-    }
-  }
+//         @media (max-width: 480px) {
+//           font-size: 16px;
+//         }
+//       }
+//     }
+//   }
 
-  .image {
-    z-index: 2;
-    margin-top: 64px;
+//   .image {
+//     z-index: 2;
+//     margin-top: 64px;
 
-    @media (max-width: 768px) {
-      margin-top: 32px;
-    }
-  }
-}
+//     @media (max-width: 768px) {
+//       margin-top: 32px;
+//     }
+//   }
+// }
