@@ -1,1 +1,10 @@
-@import "./common.module.scss";
+@import "./commun.module.scss";
+
+.container {
+  background: $dark;
+  color: $light;
+
+  .markTitle {
+    color: $gradientDown;
+  }
+}

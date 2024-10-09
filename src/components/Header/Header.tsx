@@ -61,7 +61,7 @@ function Header() {
       <div className={variantStyles.button}>
         {/* <ThemeToggleButton /> */}
         <Link href="/contact">
-          <Button label="Contato" />
+          <Button label="Contato" variant="reverse" />
         </Link>
       </div>
       <div

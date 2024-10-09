@@ -18,7 +18,7 @@ function SubHero() {
   };
   const variantStyles = getStyles();
   return (
-    <div style={{ height: "50%" }} className={variantStyles.container}>
+    <div className={variantStyles.container}>
       <div className={variantStyles.content}>
         <div className={variantStyles.circle}>
           <HiOutlineCursorClick />

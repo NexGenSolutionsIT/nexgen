@@ -6,8 +6,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $black;
+  background: transparent;
   position: relative;
+  background: $black;
 
   .box_one {
     position: absolute;
