@@ -1,0 +1,70 @@
+@import "../../../styles/variables.scss";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $black;
+  position: relative;
+
+  .box_one {
+    position: absolute;
+    left: 257px;
+
+    .text_one {
+      position: absolute;
+      top: 96px;
+      left: 67px;
+    }
+
+    .prototyp {
+      position: absolute;
+      left: 50px;
+      bottom: 50px;
+    }
+    .tech {
+      position: absolute;
+      right: 50px;
+      bottom: 50px;
+    }
+  }
+  .box_two {
+    position: absolute;
+    right: 257px;
+
+    .text_two {
+      position: absolute;
+      bottom: 96px;
+      right: 67px;
+    }
+
+    .chart {
+      position: absolute;
+      top: 48px;
+      left: 50px;
+    }
+    .menu {
+      position: absolute;
+      top: 118px;
+      right: 50px;
+    }
+  }
+}
+
+.title {
+  width: 450px;
+  font-size: 48px;
+  font-weight: bold;
+  color: $light;
+}
+
+.text {
+  margin-top: 16px;
+  width: 450px;
+  font-size: 16px;
+  font-weight: 400;
+  color: $light;
+  line-height: 32px;
+}
