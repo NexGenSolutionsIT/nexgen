@@ -1,48 +1,24 @@
 import React from "react";
-import dark from "./styles/dark.module.scss";
-import light from "./styles/light.module.scss";
-import { useTheme } from "@/Context/ThemeContext";
-import Image from "next/image";
-import Group from "../../../../public/images/Group.svg";
+import { BiCodeAlt } from "react-icons/bi";
+import styles from "./SectionOne.module.scss";
 
 function SectionOne() {
-  const { theme } = useTheme();
-  const getStyles = () => {
-    switch (theme) {
-      case "light":
-        return light;
-      default:
-        return dark;
-    }
-  };
-  const variantStyles = getStyles();
   return (
-    <div style={{ marginTop: "10%" }} className={variantStyles.container}>
-      <div className={variantStyles.textContainer}>
-        <h2 className={variantStyles.title}>
-          Transforme suas ideias em {""}
-          <span className={variantStyles.markTitle}>sucesso</span>.
-        </h2>
-        <p className={variantStyles.text}>
-          Transformar uma ideia em realidade exige mais do que inspiração. Nós
-          convertemos suas ideias em sistemas eficazes e funcionais, superando
-          expectativas.
-        </p>
-        <p className={variantStyles.text}>
-          Desde o conceito até o lançamento, trabalhamos com você, utilizando as
-          melhores práticas e tecnologias modernas. Seja para startups ou
-          empresas estabelecidas, estamos prontos para transformar sua visão em
-          sucesso.
-        </p>
-        <p className={variantStyles.text}>Aqui, suas ideias ganham vida.</p>
-      </div>
-      <div className={variantStyles.groupImages}>
-        <Image
-          src={Group}
-          alt="Grupo de imagens"
-          className={variantStyles.image}
-        />
-      </div>
+    <div className={styles.container}>
+      <BiCodeAlt className={styles.icon} />
+      <h2 className={styles.text}>
+        <span className={styles.span_primary}>{"{"}</span> Nossa{" "}
+        <span className={styles.gradient}>missão</span> é oferecer soluções
+        tecnológicas inovadoras e personalizadas para ajudar nossos clientes a
+        atingir seus objetivos com eficiência e segurança. Nossa{" "}
+        <span className={styles.gradient}>visão</span> é ser a principal
+        referência em desenvolvimento de software personalizado no Brasil,
+        reconhecida pela qualidade e inovação. Nossos{" "}
+        <span className={styles.gradient}>valores</span> são inovação,
+        qualidade, transparência e compromisso com o cliente, sempre focando em
+        soluções que agreguem valor e promovam o sucesso dos nossos parceiros.{" "}
+        <span className={styles.span_secundary}>{"}"}</span>
+      </h2>
     </div>
   );
 }

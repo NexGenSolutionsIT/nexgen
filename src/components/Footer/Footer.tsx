@@ -91,23 +91,7 @@ function Footer() {
       <div className={variantStyles.container_footer}>
         <div className={variantStyles.content}>
           <div className={variantStyles.column}>
-            <p
-              className={variantStyles.subtitle}
-              style={{
-                textAlign: "center",
-                justifyContent: "center",
-                alignItems: "center",
-                display: "flex",
-              }}
-            >
-              <Image
-                src={Logo}
-                alt="Nexgen IT Solutions Logo"
-                className={variantStyles.logo}
-                style={{ width: "30px", marginRight: "10px" }}
-              />
-              NexGen{" "}
-            </p>
+            <p className={variantStyles.subtitle}>NexGen</p>
             {nexgenData.map((link, index) => (
               <Links key={index} href={link.href}>
                 {link.text}

@@ -1,0 +1,103 @@
+@import "../../../styles/variables.scss";
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(200);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+@keyframes movePrimary {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(200px, 100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes moveSecondary {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-200px, 100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 32px;
+  z-index: 0;
+  overflow-x: hidden;
+  background: $black;
+
+  .circle_primary,
+  .circle_secundary {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(100px);
+    position: absolute;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      width: 200px;
+      height: 200px;
+      filter: blur(60px);
+    }
+
+    @media (max-width: 480px) {
+      width: 150px;
+      height: 150px;
+      filter: blur(50px);
+    }
+  }
+
+  .circle_primary {
+    background-color: $primary;
+    bottom: 50%;
+    left: -200px;
+    animation:
+      pulse 4s ease-in-out infinite,
+      movePrimary 10s ease-in-out infinite;
+
+    @media (max-width: 768px) {
+      left: -50px;
+    }
+  }
+
+  .circle_secundary {
+    background-color: $secundary;
+    bottom: 50%;
+    right: -200px;
+    animation:
+      pulse 4s ease-in-out infinite,
+      moveSecondary 10s ease-in-out infinite;
+    animation-delay: 2s;
+
+    @media (max-width: 768px) {
+      bottom: 200px;
+      right: -100px;
+    }
+  }
+}

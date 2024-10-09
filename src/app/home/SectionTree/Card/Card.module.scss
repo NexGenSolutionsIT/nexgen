@@ -1,0 +1,35 @@
+@import "../../../../styles/variables.scss";
+
+.card {
+  width: 375px;
+  height: 478px;
+  background-color: $dark80;
+  z-index: 2;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 78px;
+  padding: 48px 16px;
+  box-sizing: border-box;
+
+  .title {
+    font-size: 18px;
+    font-weight: 500;
+    color: $light;
+  }
+  .text_and_button {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    justify-content: center;
+    align-items: center;
+
+    .text {
+      line-height: 32px;
+      text-align: center;
+      color: $light80;
+    }
+  }
+}

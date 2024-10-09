@@ -1,4 +1,4 @@
-@import "../../../../styles/variables.scss";
+@import "../../../styles/variables.scss";
 
 .container {
   height: 100vh;
@@ -8,6 +8,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  background: $dark;
+  color: $light;
 
   .textContainer {
     display: flex;
@@ -23,6 +25,7 @@
 
       .markTitle {
         background: $gradientUp;
+        background-clip: $gradientUp;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
@@ -48,7 +51,6 @@
     }
   }
 }
-
 
 @media screen and (max-width: 1024px) {
   .textContainer {

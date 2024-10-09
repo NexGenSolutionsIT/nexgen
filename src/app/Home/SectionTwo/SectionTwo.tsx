@@ -1,102 +1,98 @@
-import { useTheme } from "@/Context/ThemeContext";
-import dark from "./styles/dark.module.scss";
-import light from "./styles/light.module.scss";
 import React from "react";
-import Button from "@/components/Button/Button";
-import { BsArrowRight } from "react-icons/bs";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import symbol from "../../../../public/images/symbol.svg";
+import styles from "./SectionTwo.module.scss";
 import Image from "next/image";
-import Links from "@/components/Links/Links";
-
-const accordionData = [
-  {
-    summary: "Websites Institucionais",
-    details:
-      "Fortalecemos a presença digital do seu negócio, através de sites de alta qualidade profissional e de estratégias personalizadas.",
-  },
-  {
-    summary: "Landing Pages",
-    details:
-      "Landing pages de alta conversão é uma das nossas especialidades, com design guiado e performance incomparável.",
-  },
-  {
-    summary: "E-commerces",
-    details:
-      "Fornecemos soluções personalizadas e escaláveis, para que você alcance os seus objetivos, agora e no futuro, de forma consistente e prática.",
-  },
-  {
-    summary: "Sistemas Web personalizados",
-    details:
-      " Oferecemos uma equipe de desenvolvedores de elite sob demanda para entregar a solução ideal para o seu negócio, e claro, para a sua audiência.",
-  },
-  {
-    summary: "Aplicativos Mobile",
-    details:
-      "Fortalecemos a presença digital do seu negócio, através de sites de alta qualidade profissional e de estratégias personalizadas.",
-  },
-];
+import boxTwo from "../../../../public/images/box-two.svg";
+import boxOne from "../../../../public/images/box-one.svg";
+import chart from "../../../../public/images/chart.svg";
+import menu from "../../../../public/images/menu.svg";
+import tech from "../../../../public/images/tech.svg";
+import prototype from "../../../../public/images/prototype.svg";
 
 function SectionTwo() {
-  const { theme } = useTheme();
-  const getStyles = () => {
-    switch (theme) {
-      case "light":
-        return light;
-      default:
-        return dark;
-    }
-  };
-  const variantStyles = getStyles();
-
   return (
-    <div className={variantStyles.container}>
-      <div className={variantStyles.symbol}>
-        <Image src={symbol} alt="" />
-      </div>
-      <div className={variantStyles.content}>
-        <p className={variantStyles.subtitle}>
-          Do micro ao grande empresário, todos precisam de tecnologia para seus
-          resultados escalarem
-        </p>
-        <p className={variantStyles.text}>
-          8 anos de experiência em desenvolvimento de sistemas web e mobile.
-          Especialistas no desenvolvimento de sites com alta performance para o
-          segmento financeiro.
-        </p>
-        <div className={variantStyles.links}>
-          <Button label="Entrar em contato" />
-          {/* <Links href="">
-            {
-              <div className={variantStyles.link}>
-                <p>Conheça nossos serviços</p>
-                <p>
-                  <BsArrowRight className={variantStyles.icon} />
-                </p>
-              </div>
-            }
-          </Links> */}
+    <div className={styles.container}>
+      <div className={styles.box_one}>
+        <Image
+          src={boxOne}
+          alt="Slide"
+          objectFit="cover"
+          quality={100}
+          priority
+          unoptimized
+          draggable={false}
+        />
+        <Image
+          src={prototype}
+          alt="Slide"
+          objectFit="cover"
+          quality={100}
+          priority
+          unoptimized
+          draggable={false}
+          className={styles.prototyp}
+        />
+        <Image
+          src={tech}
+          alt="Slide"
+          objectFit="cover"
+          quality={100}
+          priority
+          unoptimized
+          draggable={false}
+          className={styles.tech}
+        />
+        <div className={styles.text_one}>
+          <h1 className={styles.title}>Designs Criativos</h1>
+          <p className={styles.text}>
+            No desenvolvimento de software, designs criativos são fundamentais
+            para criar interfaces atraentes e funcionais. Eles melhoram a
+            experiência do usuário, tornam o software único e ajudam a destacar
+            soluções tecnológicas em um mercado competitivo, aliando estética e
+            usabilidade de forma eficiente.
+          </p>
         </div>
       </div>
-      <div className={variantStyles.acordion_group}>
-        {accordionData.map((accordion, index) => (
-          <Accordion key={index} className={variantStyles.acordion}>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon className={variantStyles.icon} />}
-              aria-controls="panel1-content"
-              id="panel1-header"
-              className={variantStyles.summary}
-            >
-              {accordion.summary}
-            </AccordionSummary>
-            <AccordionDetails className={variantStyles.details}>
-              {accordion.details}
-            </AccordionDetails>
-          </Accordion>
-        ))}
+
+      <div className={styles.box_two}>
+        <Image
+          src={boxTwo}
+          alt="Slide"
+          objectFit="cover"
+          quality={100}
+          priority
+          unoptimized
+          draggable={false}
+        />
+        <Image
+          src={chart}
+          alt="Slide"
+          objectFit="cover"
+          quality={100}
+          priority
+          unoptimized
+          draggable={false}
+          className={styles.chart}
+        />
+        <Image
+          src={menu}
+          alt="Slide"
+          objectFit="cover"
+          quality={100}
+          priority
+          unoptimized
+          draggable={false}
+          className={styles.menu}
+        />
+        <div className={styles.text_two}>
+          <h1 className={styles.title}>Tecnologias Inovadoras</h1>
+          <p className={styles.text}>
+            No desenvolvimento de software, tecnologias inovadoras são
+            essenciais para otimizar processos e melhorar a performance. Elas
+            impulsionam soluções criativas, tornando os sistemas mais eficientes
+            e competitivos, garantindo que os projetos estejam sempre
+            atualizados e prontos para atender às demandas do mercado.
+          </p>
+        </div>
       </div>
     </div>
   );

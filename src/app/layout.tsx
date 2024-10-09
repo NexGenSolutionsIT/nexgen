@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body style={{ background: "#09090b" }} className={ubuntu.className}>
+      <body className={ubuntu.className}>
         <ThemeProvider>
           <Header />
           {children}
