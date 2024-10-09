@@ -1,6 +1,6 @@
 import React from "react";
 import { BiCodeAlt } from "react-icons/bi";
-import styles from "src/app/Home/SectionOne/SectionOne.module.scss";
+import styles from "./SectionOne.module.scss";
 
 function SectionOne() {
   return (
