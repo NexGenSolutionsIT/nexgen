@@ -18,7 +18,7 @@ function Hero() {
           <h2 className={styles.subtitle}>
             Unindo tecnologia e criatividade, desenvolvemos soluções
             estratégicas e personalizadas para levar sua empresa ao próximo
-            nível de inovação e resultadosa.
+            nível de inovação e resultados.
           </h2>
         </div>
         <Button
